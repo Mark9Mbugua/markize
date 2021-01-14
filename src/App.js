@@ -9,6 +9,8 @@ import Education from './pages/education/education.component';
 import Projects from './pages/projects/projects.component';
 import ContactMe from './pages/contact-me/contact-me.component';
 
+import './App.css';
+
 function App() {
   return (
     <div>

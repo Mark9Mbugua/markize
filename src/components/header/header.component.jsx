@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../navbar/navbar.component';
 
-const Header = props => {
+const Header = () => {
+    const [displayMobileNavbar, setDisplayMobileNavbar] = useState(false);
+    
+    useEffect(() => {
+        window.addEventListener('resize', checkAndAutoHideMobileNavbar);
+        return () => {
+            window.removeEventListener('resize', checkAndAutoHideMobileNavbar);   
+        }
+    }, []);
+
+    const checkAndAutoHideMobileNavbar = () => {
+        const screenWidth = window.innerWidth
+        if (displayMobileNavbar && screenWidth > 768) {
+            setDisplayMobileNavbar(false);
+        }
+    }
+
     return (
         <div>
-            <h1>My Header</h1>
+            <Navbar 
+                displayMobileNavbar={displayMobileNavbar}
+                setDisplayMobileNavbar={setDisplayMobileNavbar}
+            />
         </div>
-    )
+    );
 }
 
 export default Header
