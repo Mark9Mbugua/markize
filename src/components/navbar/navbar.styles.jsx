@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 8vh;
     background: inherit;
     align-items: center;
+    width: 100%;
 `;
 
 export const Logo = styled.div`
@@ -14,10 +15,13 @@ export const Logo = styled.div`
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
+    margin-left: 0;
+    width: 25%;
     
     @media screen and (max-width: 768px) {
         letter-spacing: 3px;
         font-size: 16px;
+        margin-left: unset;
     }            
 `;
 
@@ -27,7 +31,8 @@ export const LogoLink = styled(Link)`
     color: #00264d;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
-    font-size: 25px;
+    font-size: 30px;
+    margin-left: 0;
     cursor: pointer;
 
     &:hover {
@@ -37,17 +42,20 @@ export const LogoLink = styled(Link)`
     &:focus {
         color: #1a8cff;
     }
-`;
 
+    @media screen and (max-width: 768px) {
+        margin-left: unset;
+    }     
+`;
 
 export const NavLinks = styled.ul`
     display: flex;
-    justify-content: space-around;
-    width: 40%; 
-    @media screen and (max-width: 1024px) {
-        width: 50%;
-    }
-    @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin-right: 70px; 
+    
+    @media screen and (max-width: 480px) {
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -60,17 +68,17 @@ export const NavLinks = styled.ul`
         transition: transform 0.5s ease-in;
         transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
         z-index: 5;
+        margin-right: unset; 
     }
 `;
 
 
 export const NavLink = styled(Link)`
-    text-decoration: none;
     color: #00264d;
     text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 18px;
-    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    width: 30%;
     cursor: pointer;
 
     &:hover {
