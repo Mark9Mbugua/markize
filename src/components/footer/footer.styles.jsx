@@ -14,7 +14,6 @@ export const FooterContainer = styled.div`
 export const FooterBody = styled.div`
     width: 33%; 
     padding-bottom: 10px;
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center; 
