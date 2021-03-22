@@ -11,7 +11,7 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.div`
-    color: #00264d;
+    color:#9396a3;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 18px;
@@ -28,7 +28,7 @@ export const Logo = styled.div`
 
 export const LogoLink = styled(Link)`
     text-decoration: none;
-    color: #00264d;
+    color:#00ffea;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
@@ -36,11 +36,11 @@ export const LogoLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: #1a8cff;
+        color:#9396a3;
     }
 
     &:focus {
-        color: #1a8cff;
+        color:#9396a3;
     }
 
     @media screen and (max-width: 768px) {
@@ -74,7 +74,7 @@ export const NavLinks = styled.ul`
 
 
 export const NavLink = styled(Link)`
-    color: #00264d;
+    color:#9396a3;
     text-decoration: none;
     text-align: center;
     font-size: 20px;
@@ -82,10 +82,10 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: #1a8cff;
+        color:#00ffea;
     }
 
     &:focus {
-        color: #1a8cff;
+        color:#00ffea;
     }
 `;
