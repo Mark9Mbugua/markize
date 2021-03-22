@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
+import { HeaderContainer } from './header.styles';
+
 import Navbar from '../navbar/navbar.component';
 
 const Header = () => {
@@ -19,12 +22,12 @@ const Header = () => {
     }
 
     return (
-        <div>
+        <HeaderContainer>
             <Navbar 
                 displayMobileNavbar={displayMobileNavbar}
                 setDisplayMobileNavbar={setDisplayMobileNavbar}
             />
-        </div>
+        </HeaderContainer>
     );
 }
 

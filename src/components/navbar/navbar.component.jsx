@@ -14,29 +14,45 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
                 <LogoLink to='/'>Mark Mbugua</LogoLink>
             </Logo>
             <NavLinks displayMobileNavbar={displayMobileNavbar}>
-                <NavLink 
-                    to="/"
-                    onClick={() => setDisplayMobileNavbar(false)}
-                >
-                    Home
-                </NavLink>
                 <NavLink
-                    to="/projects"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
                     onClick={() => setDisplayMobileNavbar(false)}  
                 >
-                    Projects
+                    About
                 </NavLink>
                 <NavLink
-                    to="/education"
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
                     onClick={() => setDisplayMobileNavbar(false)}  
                 >
-                    Education
+                    Experience
                 </NavLink>
                 <NavLink
-                    to="/contact-me"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
                     onClick={() => setDisplayMobileNavbar(false)}  
                 >
-                    Contact Me
+                    Portfolio
+                </NavLink>
+                <NavLink
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
+                    onClick={() => setDisplayMobileNavbar(false)}  
+                >
+                    Contact
                 </NavLink>
             </NavLinks>
             {/* <Burger

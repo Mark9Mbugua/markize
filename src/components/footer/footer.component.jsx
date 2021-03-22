@@ -1,10 +1,21 @@
 import React from 'react';
 
+import { 
+    FooterContainer,
+    FooterBody,
+    FooterInfo
+ } from './footer.styles';
+
 const Footer = () => {
     return (
-        <div>
-            <h1>My Footer</h1>
-        </div>
+        <FooterContainer>
+            <FooterBody>
+                <FooterInfo>
+                    &copy;{new Date().getFullYear()} Mark Mbugua - All Rights
+                    Reserved
+                </FooterInfo>
+            </FooterBody>
+        </FooterContainer>
     )
 }
 
