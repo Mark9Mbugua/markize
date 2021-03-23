@@ -15,7 +15,7 @@ export const LandingBody = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 75%;
-    height: auto;
+    margin-top: 30px;
     margin-left: 100px;
 `;
 
@@ -51,6 +51,6 @@ export const FavStack = styled.span`
 `;
 
 export const LandingButtonContainer = styled.div`
-    margin-top: 100px;
+    margin-top: 90px;
     padding-left: 0;
 `;
