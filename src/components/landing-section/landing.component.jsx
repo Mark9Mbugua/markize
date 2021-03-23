@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CustomButton from '../custom-button/custom-button.component';
+
 import { 
     LandingSection,
     LandingBody,
@@ -7,7 +9,8 @@ import {
     HeadingTwo,
     IntroDetails,
     MyName,
-    FavStack 
+    FavStack,
+    LandingButtonContainer 
 } from './landing.styles';
 
 const Landing = () => {
@@ -20,6 +23,9 @@ const Landing = () => {
                 <IntroDetails>I am a Software Engineer and an Internet Enterpreneur</IntroDetails>
                 <IntroDetails>I am a creator and a consultant</IntroDetails>
                 <IntroDetails><FavStack>ReactJS</FavStack> is my main weapon of mass creation</IntroDetails>
+                <LandingButtonContainer>
+                    <CustomButton>Get in Touch</CustomButton>
+                </LandingButtonContainer>
             </LandingBody>
         </LandingSection>
     )
