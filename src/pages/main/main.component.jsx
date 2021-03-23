@@ -6,15 +6,17 @@ import Portfolio from '../../components/portfolio/portfolio.component';
 import Experience from '../../components/experience/experience.component';
 import Contact from '../../components/contact/contact.component';
 
+import { MainContainer } from './main.styles';
+
 const Main = () => {
     return (
-        <>
+        <MainContainer>
             <Landing />
             <About />
             <Experience />
             <Portfolio />
             <Contact />
-        </>
+        </MainContainer>
     )
 }
 

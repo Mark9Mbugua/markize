@@ -2,6 +2,7 @@ import React from 'react';
 
 import CustomTitle from '../custom-title/custom-title.component';
 import ArrowStatement from '../arrow-statement/arrow.statement-component';
+import MyImage from '../my-image/my-image.component';
 
 import { 
     AboutSection,
@@ -9,7 +10,8 @@ import {
     DetailsContainer,
     DetailsBody,
     MyDetails,
-    TechStack 
+    TechStack,
+    ImageBody
 } from './about.styles';
 
 const About = () => {
@@ -49,7 +51,7 @@ const About = () => {
                             </ArrowStatement>
                         </TechStack>
                     </DetailsBody>
-                    <h1>Kamboto</h1>
+                    <MyImage />
                 </DetailsContainer>
             </AboutBody>
         </AboutSection>

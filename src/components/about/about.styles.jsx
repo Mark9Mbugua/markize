@@ -7,7 +7,6 @@ export const AboutSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    border: 1px solid red;
 `;
 
 export const AboutBody = styled.div`
@@ -17,9 +16,8 @@ export const AboutBody = styled.div`
     align-items: flex-start;
     width: 75%;
     height: auto;
-    margin-top: -100px;
+    margin-top: -20px;
     margin-left: 100px;
-    border: 1px solid red;
 `;
 
 
@@ -30,7 +28,6 @@ export const DetailsContainer = styled.div`
     align-items: center;
     margin: 0;
     padding-top: 25px;
-    border: 1px solid red;
 `;
 
 export const DetailsBody = styled.div`
@@ -39,7 +36,6 @@ export const DetailsBody = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0;
-    border: 1px solid red;
 `;
 
 export const MyDetails = styled.p`
@@ -52,5 +48,13 @@ export const TechStack = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    align-items: center;
+`;
+
+export const ImageBody = styled.div`
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    justify-content: center; */
     align-items: center;
 `;
