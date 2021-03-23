@@ -1,13 +1,15 @@
 import React from 'react';
 
 import CustomTitle from '../custom-title/custom-title.component';
+import ArrowStatement from '../arrow-statement/arrow.statement-component';
 
 import { 
     AboutSection,
     AboutBody,
     DetailsContainer,
     DetailsBody,
-    MyDetails 
+    MyDetails,
+    TechStack 
 } from './about.styles';
 
 const About = () => {
@@ -23,6 +25,29 @@ const About = () => {
                             My goal is to always build products that provide pixel-perfect, performant experiences.
                         </MyDetails>
                         <MyDetails>Here are a few technologies I've been working with recently:</MyDetails>
+                        <TechStack>
+                            <ArrowStatement>
+                                <MyDetails>JavaScript (ES6+)</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>React</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>HTML & (S)CSS</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>Python</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>Django</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>Heroku</MyDetails>
+                            </ArrowStatement>
+                            <ArrowStatement>
+                                <MyDetails>AWS</MyDetails>
+                            </ArrowStatement>
+                        </TechStack>
                     </DetailsBody>
                     <h1>Kamboto</h1>
                 </DetailsContainer>
