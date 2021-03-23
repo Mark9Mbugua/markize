@@ -7,23 +7,23 @@ export const LandingSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    /* border: 1px solid red; */
 `;
 
 export const LandingBody = styled.div`
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 75%;
     height: auto;
     margin-top: -100px;
     margin-left: 100px;
 `;
 
+
+
 export const MyName = styled.p`
-    color: #00ffea;
+    color: #ff6161;
     font-size: 25px;
 `;
 
@@ -46,7 +46,12 @@ export const IntroDetails = styled.p`
 `;
 
 export const FavStack = styled.span`
-    color: #00ffea;
+    color: #ff6161;
     padding: 0;
     margin: 0;
+`;
+
+export const LandingButtonContainer = styled.div`
+    margin-top: 100px;
+    padding-left: 0;
 `;

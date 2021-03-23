@@ -28,7 +28,7 @@ export const Logo = styled.div`
 
 export const LogoLink = styled(Link)`
     text-decoration: none;
-    color:#00ffea;
+    color:#ff6161;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
@@ -82,10 +82,10 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color:#00ffea;
+        color:#ff6161;
     }
 
     &:focus {
-        color:#00ffea;
+        color:#ff6161;
     }
 `;
