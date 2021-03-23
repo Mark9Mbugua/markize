@@ -19,7 +19,7 @@ const Landing = () => {
             <LandingBody>
                 <MyName>Hi, my name is</MyName>
                 <HeadingOne>Mark Mbugua.</HeadingOne>
-                <HeadingTwo>I write code for the internet.</HeadingTwo>
+                <HeadingTwo>I build things for the web.</HeadingTwo>
                 <IntroDetails>I am a Software Engineer and an Internet Enterpreneur</IntroDetails>
                 <IntroDetails>I am a creator and a consultant</IntroDetails>
                 <IntroDetails><FavStack>ReactJS</FavStack> is my main weapon of mass creation</IntroDetails>

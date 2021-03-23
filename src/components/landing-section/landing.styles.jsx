@@ -16,7 +16,6 @@ export const LandingBody = styled.div`
     align-items: flex-start;
     width: 75%;
     height: auto;
-    margin-top: -100px;
     margin-left: 100px;
 `;
 
