@@ -47,3 +47,10 @@ export const MyDetails = styled.p`
     line-height: 40px;
     font-size: 20px;
 `;
+
+export const TechStack = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+`;
