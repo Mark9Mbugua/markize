@@ -7,7 +7,6 @@ export const ExperienceSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    border: 1px solid red;
 `;
 
 export const ExperienceBody = styled.div`
@@ -16,43 +15,35 @@ export const ExperienceBody = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 75%;
-    /* margin-top: -20px; */
     margin-left: 100px;
-    /* border: 1px solid red; */
 `;
 
 export const ExperienceDetails = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 0;
     padding-top: 25px;
-    /* border: 1px solid white; */
     position: relative;
+    min-height: 500px;
 `;
 
 export const CompaniesTabs = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     margin: 0;
-    /* padding-top: 25px; */
-    /* border: 1px solid white; */
+    padding-top: 25px;
+    width: 20%;
 `;
 
 export const EmploymentHistory = styled.div`
-    display: flex;
+    display: ${props => props.isActive === 'active-content' ? 'flex': 'none'};
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-    /* padding-top: 25px; */
-    border: 1px solid white;
-
-    p {
-        color: white;
-    }
+    padding-top: 25px;
 `;
 
 export const TabButton = styled.button`
@@ -78,4 +69,31 @@ export const TabButton = styled.button`
         color:#ff6161;
         background-color: #18224a;
     }
+`;
+
+export const Task = styled.p`
+    color:#9396a3;
+    line-height: 40px;
+    font-size: 20px;
+`;
+
+export const JobIntro = styled.div`
+    margin-bottom: 20px;
+`;
+
+export const JobTitle = styled.h1`
+    color: #fff;
+    line-height: 45px;
+    font-size: 30px;
+`;
+
+export const TitleSpan = styled.span`
+    color:#ff6161;
+    padding: 0;
+    margin: 0;
+`;
+
+export const JobTimeline = styled(Task)`
+    /* line-height: 38px; */
+    font-size: 18px;
 `;
