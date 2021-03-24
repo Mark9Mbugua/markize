@@ -10,7 +10,11 @@ import {
     CompaniesTabs,
     EmploymentHistory,
     TabButton,
-    Task 
+    Task,
+    JobTitle, 
+    TitleSpan,
+    JobTimeline,
+    JobIntro
 } from './experience.styles';
 
 const Experience = () => {
@@ -52,6 +56,14 @@ const Experience = () => {
                         </TabButton>
                     </CompaniesTabs>
                     <EmploymentHistory isActive={toggleState === 1 ? 'active-content' : ''}>
+                        <JobIntro>
+                            <JobTitle>
+                                Full Stack Web Developer <TitleSpan>@ Dealie</TitleSpan>
+                            </JobTitle>
+                            <JobTimeline>
+                                Jan 2021 - Present
+                            </JobTimeline>
+                        </JobIntro>
                         <ArrowStatement>
                             <Task> Designing and developing RESTful APIs using Django</Task>
                         </ArrowStatement>
@@ -75,6 +87,14 @@ const Experience = () => {
                         </ArrowStatement>
                     </EmploymentHistory>
                     <EmploymentHistory isActive={toggleState === 2 ? 'active-content' : ''}>
+                        <JobIntro>
+                            <JobTitle>
+                                Full Stack Web Developer <TitleSpan>@ Banana Hill Art Gallery</TitleSpan>
+                            </JobTitle>
+                            <JobTimeline>
+                                Sept 2020 - Present
+                            </JobTimeline>
+                        </JobIntro>
                         <ArrowStatement>
                             <Task> Creating the application's UI/UX designs using Figma</Task>
                         </ArrowStatement>
@@ -107,6 +127,14 @@ const Experience = () => {
                         </ArrowStatement>
                     </EmploymentHistory>
                     <EmploymentHistory isActive={toggleState === 3 ? 'active-content' : ''}>
+                        <JobIntro>
+                            <JobTitle>
+                                Full Stack Web Developer <TitleSpan>@ Anzil Software Limited</TitleSpan>
+                            </JobTitle>
+                            <JobTimeline>
+                                Oct 2019 - August 2020
+                            </JobTimeline>
+                        </JobIntro>
                         <ArrowStatement>
                             <Task>Participating in the design and creation of highly scalable web applications.</Task>
                         </ArrowStatement>
@@ -136,6 +164,14 @@ const Experience = () => {
                         </ArrowStatement>
                     </EmploymentHistory>
                     <EmploymentHistory isActive={toggleState === 4 ? 'active-content' : ''}>
+                        <JobIntro>
+                            <JobTitle>
+                                API Developer <TitleSpan>@ Rentor Group</TitleSpan>
+                            </JobTitle>
+                            <JobTimeline>
+                                April 2019 - Sept 2019
+                            </JobTimeline>
+                        </JobIntro>
                         <ArrowStatement>
                             <Task>Member of a team that was tasked with developing a RESTful API backend</Task>
                         </ArrowStatement>

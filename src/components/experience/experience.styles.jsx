@@ -33,7 +33,7 @@ export const CompaniesTabs = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    /* padding-top: 25px; */
+    padding-top: 25px;
     width: 20%;
 `;
 
@@ -43,7 +43,7 @@ export const EmploymentHistory = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0;
-    /* padding-top: 25px; */
+    padding-top: 25px;
 `;
 
 export const TabButton = styled.button`
@@ -75,4 +75,25 @@ export const Task = styled.p`
     color:#9396a3;
     line-height: 40px;
     font-size: 20px;
+`;
+
+export const JobIntro = styled.div`
+    margin-bottom: 20px;
+`;
+
+export const JobTitle = styled.h1`
+    color: #fff;
+    line-height: 45px;
+    font-size: 30px;
+`;
+
+export const TitleSpan = styled.span`
+    color:#ff6161;
+    padding: 0;
+    margin: 0;
+`;
+
+export const JobTimeline = styled(Task)`
+    /* line-height: 38px; */
+    font-size: 18px;
 `;
