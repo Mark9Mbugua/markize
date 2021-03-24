@@ -15,7 +15,6 @@ export const AboutBody = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 75%;
-    height: auto;
     margin-top: -20px;
     margin-left: 100px;
 `;
