@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CustomTitle from '../custom-title/custom-title.component';
-import ArrowStatement from '../arrow-statement/arrow.statement-component';
+import ArrowStatement from '../arrow-statement/arrow-statement.component';
 import MyImage from '../my-image/my-image.component';
 
 import { 

@@ -19,8 +19,6 @@ export const AboutBody = styled.div`
     margin-left: 100px;
 `;
 
-
-
 export const DetailsContainer = styled.div`
     display: flex;
     justify-content: center;
