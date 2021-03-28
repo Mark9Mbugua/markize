@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Overlay } from '../portfolio/portfolio.styles'
+
 import MyBioImage from '../../assets/me.jpg';
 
 
@@ -16,6 +18,7 @@ const MyImage = () => {
            <SquareContainer />
            <MyImageBody>
                 <ImageSrc src={MyBioImage} />
+                <Overlay />
             </MyImageBody> 
         </ImageContainer>
     )

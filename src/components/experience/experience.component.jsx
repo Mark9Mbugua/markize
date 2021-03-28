@@ -166,7 +166,7 @@ const Experience = () => {
                     <EmploymentHistory isActive={toggleState === 4 ? 'active-content' : ''}>
                         <JobIntro>
                             <JobTitle>
-                                API Developer <TitleSpan>@ Rentor Group</TitleSpan>
+                                Backend/API Developer <TitleSpan>@ Rentor Group</TitleSpan>
                             </JobTitle>
                             <JobTimeline>
                                 April 2019 - Sept 2019
