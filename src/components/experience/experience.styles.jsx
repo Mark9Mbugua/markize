@@ -63,7 +63,6 @@ export const TabButton = styled.button`
     border: none;
     border-left: ${props => props.isActive === 'active' ? '1px solid #ff6161 !important': '1px solid  #9396a3 !important'};
     outline: none;
-    background-color: ${props => props.isActive === 'active' ? '#18224a': ''};
 
     &:hover {
         color:#ff6161;
@@ -94,6 +93,5 @@ export const TitleSpan = styled.span`
 `;
 
 export const JobTimeline = styled(Task)`
-    /* line-height: 38px; */
     font-size: 18px;
 `;
