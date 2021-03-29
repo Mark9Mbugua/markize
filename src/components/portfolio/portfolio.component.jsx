@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ProjectImage1 from '../../assets/bhag.jpg';
+import ExternalLinkSrc from '../../assets/external-link.svg';
 
 import CustomTitle from '../custom-title/custom-title.component';
 
@@ -16,7 +17,12 @@ import {
     ProjectTitleContainer,
     ProjectTitle,
     ProjectDescriptionContainer,
-    Overlay
+    Overlay,
+    TechStackContainer,
+    TechStack,
+    ExternalLinkContainer,
+    ExternalLink,
+    ExternalLinkSvg
 } from '../portfolio/portfolio.styles';
 
 const Portfolio = () => {
@@ -38,14 +44,22 @@ const Portfolio = () => {
                         </ProjectTitleContainer>
                         <ProjectDescriptionContainer>
                             <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
-                            <p>Developed its frontend and backend, then deployed the website</p>
+                            <p>Developed its frontend and backend, then deployed it.</p>
                         </ProjectDescriptionContainer>
-                        <div>
-                            <h1>Tech Stack</h1>
-                        </div>
-                        <div>
-                            <h1>Project Link</h1>
-                        </div>
+                        <TechStackContainer>
+                            <TechStack>ReactJS</TechStack>
+                            <TechStack>Redux</TechStack>
+                            <TechStack>Styled Components</TechStack>
+                            <TechStack>Django Rest Framework</TechStack>
+                            <TechStack>Heroku</TechStack>
+                            <TechStack>AWS S3</TechStack>
+                            <TechStack>Cloudfront</TechStack>
+                        </TechStackContainer>
+                        <ExternalLinkContainer>
+                            <ExternalLink href="https://www.bananahillsartgallery.com/" target="_blank">
+                                < ExternalLinkSvg src={ExternalLinkSrc} />
+                            </ExternalLink>
+                        </ExternalLinkContainer>
                     </ProjectDetails>
                 </PortfolioDetailsBody>
             </PortfolioBody>

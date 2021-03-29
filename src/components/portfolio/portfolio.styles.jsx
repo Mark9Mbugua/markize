@@ -7,7 +7,7 @@ export const PortfolioSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `;
 
 export const PortfolioBody = styled.div`
@@ -18,7 +18,7 @@ export const PortfolioBody = styled.div`
     width: 75%;
     margin-top: 30px;
     margin-left: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `;
 
 export const PortfolioDetailsBody = styled.div`
@@ -27,7 +27,7 @@ export const PortfolioDetailsBody = styled.div`
     align-items: center;
     margin: 0;
     padding-top: 25px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 `;
 
 export const ProjectImageContainer = styled.div`
@@ -61,17 +61,18 @@ export const ProjectImageSrc = styled.img`
 export const ProjectDetails = styled.div`
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
     margin: 0;
     padding-top: 25px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 450px;
+    postition: relative;
 
 `;
 
 export const ProjectTypeContainer = styled.div` 
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: block;
     text-align: end;
 `;
@@ -94,15 +95,48 @@ export const ProjectDescriptionContainer = styled.div`
     margin-right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
+    width: 110%;
+    margin-left: -10%;
+    z-index: 1;
+    text-align: end;
+    padding: 0 30px;
+    border-radius: 5px; 
 
     p {
         margin-left: auto;
         color:#9396a3;
         background:#18224a;
         align-self: flex-end;
+        font-size: 18px;
     }
 `;
 
+export const TechStackContainer = styled.div` 
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    justify-content: end;
+    /* border: 1px solid white; */
+`;
+
+export const TechStack = styled.p` 
+    color:#9396a3;
+`;
+
+export const ExternalLinkContainer = styled.div` 
+    /* border: 1px solid red; */
+`;
+
+export const ExternalLink = styled.a`
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 95%;
+`;
+
+export const ExternalLinkSvg = styled.img` 
+    height: 30px;
+    width: 25px;
+`;
 
 
