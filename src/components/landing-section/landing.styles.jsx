@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const LandingSection = styled.section`
     height: 100vh;
@@ -52,5 +53,11 @@ export const FavStack = styled.span`
 
 export const LandingButtonContainer = styled.div`
     margin-top: 90px;
-    padding-left: 0;
+    padding: 0;
+    width: 168px;
+`;
+
+export const ContactLink = styled(Link)`
+    text-decoration: none;
+    cursor: pointer;
 `;

@@ -19,7 +19,6 @@ export const CustomButtonContainer = styled.button`
     &:hover {
         color:#9396a3;
         border: 1px solid #9396a3;
-
     }
 
     &:focus {

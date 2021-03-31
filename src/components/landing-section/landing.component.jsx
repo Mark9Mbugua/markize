@@ -10,7 +10,8 @@ import {
     IntroDetails,
     MyName,
     FavStack,
-    LandingButtonContainer 
+    LandingButtonContainer,
+    ContactLink 
 } from './landing.styles';
 
 const Landing = () => {
@@ -24,7 +25,17 @@ const Landing = () => {
                 <IntroDetails>I am a creator and a consultant</IntroDetails>
                 <IntroDetails><FavStack>ReactJS</FavStack> is my main weapon of mass creation</IntroDetails>
                 <LandingButtonContainer>
-                    <CustomButton>Get in Touch</CustomButton>
+                    <ContactLink 
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration= {700}
+                    >
+                        <CustomButton>
+                            Get in Touch
+                        </CustomButton>
+                    </ContactLink>
                 </LandingButtonContainer>
             </LandingBody>
         </LandingSection>
