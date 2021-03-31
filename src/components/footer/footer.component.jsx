@@ -10,7 +10,8 @@ import {
     FooterInfo,
     FooterIcons,
     SocialIconSrc,
-    FooterInfoContainer
+    FooterInfoContainer,
+    SocialLink
  } from './footer.styles';
 
 const Footer = () => {
@@ -18,9 +19,15 @@ const Footer = () => {
         <FooterContainer>
             <FooterBody>
                 <FooterIcons>
-                    <SocialIconSrc src={GitHubIcon} alt='GitHub icon'/>
-                    <SocialIconSrc src={LinkedInIcon} alt='LinkedIn icon'/>
-                    <SocialIconSrc src={TwitterIcon} alt='Twitter icon'/>
+                    <SocialLink href="https://github.com/Mark9Mbugua" target="_blank">
+                        <SocialIconSrc src={GitHubIcon} alt='GitHub icon'/>
+                    </SocialLink>
+                    <SocialLink href="https://www.linkedin.com/in/mark-mbugua-7a73b2a0/" target="_blank">
+                        <SocialIconSrc src={LinkedInIcon} alt='LinkedIn icon'/>
+                    </SocialLink>
+                    <SocialLink href="https://twitter.com/mark_mbugua" target="_blank">
+                        <SocialIconSrc src={TwitterIcon} alt='Twitter icon'/>
+                    </SocialLink>
                 </FooterIcons>
                 <FooterInfoContainer>
                     <FooterInfo>

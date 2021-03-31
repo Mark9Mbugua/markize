@@ -8,7 +8,8 @@ import {
     WhatNext,
     ContactMe,
     PartingShot,
-    ContactButtonContainer 
+    ContactButtonContainer,
+    EmailLink 
 } from './contact.styles';
 
 const Contact = () => {
@@ -27,7 +28,9 @@ const Contact = () => {
                     </PartingShot>
                 </div>
                 <ContactButtonContainer>
+                    <EmailLink href="mailto:mbuguamark@gmail.com" target="_blank">
                     <CustomButton>Say Hello</CustomButton>
+                    </EmailLink>
                 </ContactButtonContainer>
             </ContactBody>
         </ContactSection>

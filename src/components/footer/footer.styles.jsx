@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* border: 1px solid red; */
+    overflow-x: hidden;
 `;
 
 
@@ -45,9 +45,9 @@ export const FooterInfo = styled.p`
 export const SocialIconSrc = styled.img`
     height: 30px;
     width: 30px;
-    cursor: pointer;
+`;
 
-    &:hover {
-        color:#ff6161;
-    }
+export const SocialLink = styled.a`
+    text-decoration: none;
+    cursor: pointer;
 `;

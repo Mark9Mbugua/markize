@@ -7,6 +7,7 @@ export const ContactSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    overflow-x: hidden;
 `;
 
 export const ContactBody = styled.div`
@@ -45,4 +46,10 @@ export const ContactButtonContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+export const EmailLink = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+    width: 168px;
 `;

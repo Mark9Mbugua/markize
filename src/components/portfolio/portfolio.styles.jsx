@@ -8,6 +8,7 @@ export const PortfolioSection = styled.section`
     justify-items: center;
     align-items: center;
     /* border: 1px solid red; */
+    overflow-x: hidden;
 `;
 
 export const PortfolioBody = styled.div`
