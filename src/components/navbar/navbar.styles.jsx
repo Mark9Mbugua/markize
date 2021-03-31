@@ -17,7 +17,9 @@ export const Logo = styled.div`
     margin-top: 15px;
 
     @media screen and (max-width: 480px) {
-
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
     }            
 `;
 
@@ -48,11 +50,12 @@ export const NavLinks = styled.ul`
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background: #74706D;
+        background: inherit;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 70%;
         transition: transform 0.5s ease-in;
         transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
         z-index: 5;
@@ -76,4 +79,9 @@ export const NavLink = styled(Link)`
     &:focus {
         color:#ff6161;
     }
+
+    @media screen and (max-width: 480px) {
+        background: inherit;
+        height: 15%;
+  }
 `;
