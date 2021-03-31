@@ -61,14 +61,6 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
                     Contact
                 </NavLink>
             </NavLinks>
-            {/* <Burger
-                displayMobileNavbar={displayMobileNavbar} 
-                onClick={() => setDisplayMobileNavbar(!displayMobileNavbar)}
-            >
-                <div className='line1'></div>
-                <div className='line2'></div>
-                <div className='line3'></div>
-            </Burger> */}
         </Nav>
     )
 }
