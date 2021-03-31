@@ -1,17 +1,23 @@
 import React from 'react';
+
+import MyLogo from '../../assets/Logo.svg';
+
 import { 
     Nav,
     Logo,
     LogoLink,
     NavLinks,
-    NavLink
+    NavLink,
+    LogoSrc
 } from './navbar.styles';
 
 const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
     return (
         <Nav>
             <Logo>
-                <LogoLink to='/'>Mark Mbugua</LogoLink>
+                <LogoLink to='/'>
+                   <LogoSrc src={MyLogo} /> 
+                </LogoLink>
             </Logo>
             <NavLinks displayMobileNavbar={displayMobileNavbar}>
                 <NavLink

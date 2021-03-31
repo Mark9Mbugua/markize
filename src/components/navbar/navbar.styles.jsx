@@ -11,40 +11,28 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.div`
-    color:#9396a3;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 18px;
-    margin-left: 0;
-    width: 25%;
-    
-    @media screen and (max-width: 768px) {
-        letter-spacing: 3px;
-        font-size: 16px;
-        margin-left: unset;
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+    margin-top: 15px;
+
+    @media screen and (max-width: 480px) {
+
     }            
 `;
+
+export const LogoSrc = styled.img`
+    width: 100%;
+    height: 100%;           
+`;
+
 
 
 export const LogoLink = styled(Link)`
     text-decoration: none;
-    color:#ff6161;
-    text-decoration: none;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-    margin-left: 0;
     cursor: pointer;
 
-    &:hover {
-        color:#9396a3;
-    }
-
-    &:focus {
-        color:#9396a3;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-left: unset;
+    @media screen and (max-width: 480px) {
     }     
 `;
 
