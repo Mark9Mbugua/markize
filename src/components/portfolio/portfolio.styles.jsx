@@ -27,6 +27,7 @@ export const PortfolioDetailsBody = styled.div`
     align-items: center;
     margin: 0;
     padding-top: 25px;
+    margin-bottom: 70px;
     /* border: 1px solid white; */
 `;
 
@@ -65,9 +66,8 @@ export const ProjectDetails = styled.div`
     /* align-items: flex-start; */
     margin: 0;
     padding-top: 25px;
-    /* border: 1px solid white; */
     height: 450px;
-    postition: relative;
+    position: relative;
 
 `;
 
@@ -77,11 +77,18 @@ export const ProjectTypeContainer = styled.div`
     text-align: end;
 `;
 
+export const ProjectTypeInvertedContainer = styled(ProjectTypeContainer)` 
+    text-align: start;
+`;
+
 export const ProjectType = styled.p`
     color:#ff6161;
 `;
 
 export const ProjectTitleContainer = styled(ProjectTypeContainer)` 
+`;
+
+export const ProjectTitleInvertedContainer = styled(ProjectTypeInvertedContainer)` 
 `;
 
 export const ProjectTitle = styled.h1`
@@ -107,9 +114,13 @@ export const ProjectDescriptionContainer = styled.div`
         margin-left: auto;
         color:#9396a3;
         background:#18224a;
-        align-self: flex-end;
         font-size: 18px;
     }
+`;
+
+export const ProjectDescriptionInvertedContainer = styled(ProjectDescriptionContainer)` 
+    margin-left: 0;
+    text-align: start;
 `;
 
 export const TechStackContainer = styled.div` 
@@ -132,6 +143,10 @@ export const ExternalLink = styled.a`
     text-decoration: none;
     cursor: pointer;
     margin-left: 95%;
+`;
+
+export const ExternalLinkInverted = styled(ExternalLink)`
+    margin-left: 0;
 `;
 
 export const ExternalLinkSvg = styled.img` 

@@ -22,7 +22,11 @@ import {
     TechStack,
     ExternalLinkContainer,
     ExternalLink,
-    ExternalLinkSvg
+    ExternalLinkSvg,
+    ProjectTypeInvertedContainer,
+    ProjectTitleInvertedContainer,
+    ProjectDescriptionInvertedContainer,
+    ExternalLinkInverted
 } from '../portfolio/portfolio.styles';
 
 const Portfolio = () => {
@@ -41,6 +45,70 @@ const Portfolio = () => {
                         </ProjectTypeContainer>
                         <ProjectTitleContainer>
                             <ProjectTitle>Banana Hill Art Gallery</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescriptionContainer>
+                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
+                            <p>Developed its frontend and backend, then deployed it.</p>
+                        </ProjectDescriptionContainer>
+                        <TechStackContainer>
+                            <TechStack>ReactJS</TechStack>
+                            <TechStack>Redux</TechStack>
+                            <TechStack>Styled Components</TechStack>
+                            <TechStack>Django Rest Framework</TechStack>
+                            <TechStack>Heroku</TechStack>
+                            <TechStack>AWS S3</TechStack>
+                            <TechStack>Cloudfront</TechStack>
+                        </TechStackContainer>
+                        <ExternalLinkContainer>
+                            <ExternalLink href="https://www.bananahillsartgallery.com/" target="_blank">
+                                < ExternalLinkSvg src={ExternalLinkSrc} />
+                            </ExternalLink>
+                        </ExternalLinkContainer>
+                    </ProjectDetails>
+                </PortfolioDetailsBody>
+                <PortfolioDetailsBody>
+                    <ProjectDetails>
+                        <ProjectTypeInvertedContainer>
+                            <ProjectType>My Project</ProjectType>
+                        </ProjectTypeInvertedContainer>
+                        <ProjectTitleInvertedContainer>
+                            <ProjectTitle>Dealie</ProjectTitle>
+                        </ProjectTitleInvertedContainer>
+                        <ProjectDescriptionInvertedContainer>
+                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
+                            <p>Developed its frontend and backend, then deployed it.</p>
+                        </ProjectDescriptionInvertedContainer>
+                        <TechStackContainer>
+                            <TechStack>ReactJS</TechStack>
+                            <TechStack>Redux</TechStack>
+                            <TechStack>Styled Components</TechStack>
+                            <TechStack>Django Rest Framework</TechStack>
+                            <TechStack>Heroku</TechStack>
+                            <TechStack>AWS S3</TechStack>
+                            <TechStack>Cloudfront</TechStack>
+                        </TechStackContainer>
+                        <ExternalLinkContainer>
+                            < ExternalLinkInverted href="https://www.bananahillsartgallery.com/" target="_blank">
+                                < ExternalLinkSvg src={ExternalLinkSrc} />
+                            </ ExternalLinkInverted>
+                        </ExternalLinkContainer>
+                    </ProjectDetails>
+                    <ProjectImageContainer>
+                        <ProjectImageSrc src={ProjectImage1} />
+                        <Overlay />
+                    </ProjectImageContainer>
+                </PortfolioDetailsBody>
+                <PortfolioDetailsBody>
+                    <ProjectImageContainer>
+                        <ProjectImageSrc src={ProjectImage1} />
+                        <Overlay />
+                    </ProjectImageContainer>
+                    <ProjectDetails>
+                        <ProjectTypeContainer>
+                            <ProjectType>Client Project</ProjectType>
+                        </ProjectTypeContainer>
+                        <ProjectTitleContainer>
+                            <ProjectTitle>Pennylane Apartments</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescriptionContainer>
                             <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
