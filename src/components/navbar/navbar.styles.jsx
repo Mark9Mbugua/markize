@@ -43,7 +43,14 @@ export const NavLinks = styled.ul`
     justify-content: center;
     align-items: center;
     width: 45%;
-    margin-right: 70px; 
+    margin-right: 70px;
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 50%;
+        margin-right: 20px;
+    } 
     
     @media screen and (max-width: 480px) {
         position: absolute;
@@ -57,9 +64,9 @@ export const NavLinks = styled.ul`
         align-items: center;
         width: 70%;
         transition: transform 0.5s ease-in;
-        transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
+        transform: translateX(${ props => props.displayMobileNavbar ? ("6%"): ("106%") });
         z-index: 5;
-        margin-right: unset; 
+        margin-right: 0;
     }
 `;
 
