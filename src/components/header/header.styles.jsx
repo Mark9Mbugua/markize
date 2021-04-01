@@ -4,6 +4,12 @@ export const HeaderContainer = styled.div`
     align-self: center;
     width: 97%;
 
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 100%;
+    }
+
     @media screen and (max-width: 480px) {
         display: flex;
         justify-items: space-between;
@@ -18,6 +24,7 @@ export const Burger = styled.div`
   @media screen and (max-width: 480px) {
     display: block;
     margin: 25px 15px 0 0;
+    width: 25px;
 
     div {
         margin: 5px 5px 5px auto;
