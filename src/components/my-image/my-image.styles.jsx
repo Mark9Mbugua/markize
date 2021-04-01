@@ -5,6 +5,18 @@ export const ImageContainer = styled.div`
     margin-top: -300px;
     margin-left: 100px;
     width: 60%;
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        margin-top: 60px;
+        margin-left: unset;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 30px;
+        margin-left: unset;
+    }
 `;
 
 export const SquareContainer = styled.div`
@@ -14,6 +26,13 @@ export const SquareContainer = styled.div`
     position: absolute;
     margin-left: 20px;
     margin-top: 20px;
+
+    @media screen and (max-width: 480px) {
+        width: 180px;
+        height: 180px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
 
 `;
 
@@ -29,4 +48,9 @@ export const MyImageBody = styled.div`
     overflow: hidden;
     z-index: 10;
     margin-bottom: auto;
+
+    @media screen and (max-width: 480px) {
+        width: 180px;
+        height: 180px;
+    }
 `;
