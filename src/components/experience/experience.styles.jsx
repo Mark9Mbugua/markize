@@ -189,6 +189,7 @@ export const TabButton = styled.button`
     }
 
     @media screen and (max-width: 480px) {
+        justify-content: center;
         border-bottom: ${props => props.isActive === 'active' ? '1px solid #ff6161 !important': '1px solid  #9396a3 !important'};
         border-left: none !important;
     }

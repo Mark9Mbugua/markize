@@ -26,7 +26,8 @@ import {
     ProjectTypeInvertedContainer,
     ProjectTitleInvertedContainer,
     ProjectDescriptionInvertedContainer,
-    ExternalLinkInverted
+    ExternalLinkInverted,
+    TechStackInvertedContainer
 } from '../portfolio/portfolio.styles';
 
 const Portfolio = () => {
@@ -78,7 +79,7 @@ const Portfolio = () => {
                             <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
                             <p>Developed its frontend and backend, then deployed it.</p>
                         </ProjectDescriptionInvertedContainer>
-                        <TechStackContainer>
+                        <TechStackInvertedContainer>
                             <TechStack>ReactJS</TechStack>
                             <TechStack>Redux</TechStack>
                             <TechStack>Styled Components</TechStack>
@@ -86,7 +87,7 @@ const Portfolio = () => {
                             <TechStack>Heroku</TechStack>
                             <TechStack>AWS S3</TechStack>
                             <TechStack>Cloudfront</TechStack>
-                        </TechStackContainer>
+                        </TechStackInvertedContainer>
                         <ExternalLinkContainer>
                             < ExternalLinkInverted href="https://www.bananahillsartgallery.com/" target="_blank">
                                 < ExternalLinkSvg src={ExternalLinkSrc} />

@@ -132,7 +132,7 @@ const Experience = () => {
                                 Full Stack Web Developer <TitleSpan>@ Anzil Software Limited</TitleSpan>
                             </JobTitle>
                             <JobTimeline>
-                                Oct 2019 - August 2020
+                                Oct 2019 - Present
                             </JobTimeline>
                         </JobIntro>
                         <ArrowStatement>
