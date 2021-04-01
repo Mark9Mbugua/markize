@@ -76,6 +76,7 @@ export const LandingBody = styled.div`
         width: 100%;
         margin-left: 20px;
         margin-top: 80px;
+        padding-right: 25px;
     }
 `;
 
