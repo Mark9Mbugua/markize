@@ -5,4 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Truculenta';
-} 
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        /* overflow-x: hidden; */
+    }
+}

@@ -40,7 +40,7 @@ export const AboutSection = styled.section`
 
     @media screen and (max-width: 480px) {
         height: 150vh;
-        align-items: flex-start;
+        align-items: start;
     }
 `;
 
@@ -84,7 +84,7 @@ export const AboutBody = styled.div`
     @media screen and (max-width: 480px) {
         width: 100%;
         margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 70px;
     }
 `;
 
@@ -103,7 +103,7 @@ export const DetailsContainer = styled.div`
 
     @media screen and (max-width: 480px) {
         flex-direction: column;
-        /* justify-content: space-evenly; */
+        padding-right: 25px;
     }
 `;
 
@@ -129,9 +129,5 @@ export const TechStack = styled.div`
 `;
 
 export const ImageBody = styled.div`
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; 
-    justify-content: center; */
     align-items: center;
 `;

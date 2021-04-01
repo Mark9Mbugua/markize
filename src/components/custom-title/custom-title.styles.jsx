@@ -30,13 +30,13 @@ export const CustomTitleContainer = styled.div`
     and (max-width: 1024px)
     and (min-height: 768px)
     and (max-height: 768px) {
-        width: 55%;
+        width: 50%;
     }
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
-        width: 60%;
+        width: 50%;
     }
 
     @media screen and (max-width: 480px) {
@@ -106,14 +106,14 @@ export const Titleline = styled.hr`
     and (min-height: 768px)
     and (max-height: 768px) {
         width: 350px;
-        margin: 0 0 0 -200px;
+        margin: 0 0 0 -250px;
     }
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
         width: 200px;
-        margin: 0 0 0 -265px;
+        margin: 0 0 0 -190px;
     }
 
     @media screen and (max-width: 480px) {
