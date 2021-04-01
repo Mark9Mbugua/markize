@@ -7,7 +7,6 @@ export const ContactSection = styled.section`
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    overflow-x: hidden;
 `;
 
 export const ContactBody = styled.div`
@@ -17,10 +16,13 @@ export const ContactBody = styled.div`
     align-items: center;
     width: 75%;
     margin-top: 30px;
-    /* margin-left: 100px; */
 
     div {
         text-align: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
     }
 `;
 
