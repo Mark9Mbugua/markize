@@ -9,6 +9,30 @@ export const LandingSection = styled.section`
     justify-items: center;
     align-items: center;
 
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        height: 80vh;
+    }
+
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        height: 70vh;
+    }
+
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        height: 115vh;
+    }
+
     @media screen and (max-width: 480px) {
         align-items: start;
     }
@@ -23,9 +47,34 @@ export const LandingBody = styled.div`
     margin-top: 30px;
     margin-left: 100px;
 
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        margin-left: 50px;
+        width: 85%;
+    }
+
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        width: 85%;
+        margin-left: 50px;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 85%;
+        margin-left: 50px;
+    }
+
     @media screen and (max-width: 480px) {
         width: 100%;
-        margin-left: 35px;
+        margin-left: 20px;
         margin-top: 80px;
     }
 `;
