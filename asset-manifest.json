@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3d0ad50.chunk.css",
+    "main.js": "/static/js/main.846dab52.chunk.js",
+    "main.js.map": "/static/js/main.846dab52.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.52583067.js",
+    "runtime-main.js.map": "/static/js/runtime-main.52583067.js.map",
+    "static/js/2.3f5b4ca0.chunk.js": "/static/js/2.3f5b4ca0.chunk.js",
+    "static/js/2.3f5b4ca0.chunk.js.map": "/static/js/2.3f5b4ca0.chunk.js.map",
+    "static/js/3.2837822e.chunk.js": "/static/js/3.2837822e.chunk.js",
+    "static/js/3.2837822e.chunk.js.map": "/static/js/3.2837822e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d3d0ad50.chunk.css.map": "/static/css/main.d3d0ad50.chunk.css.map",
+    "static/js/2.3f5b4ca0.chunk.js.LICENSE.txt": "/static/js/2.3f5b4ca0.chunk.js.LICENSE.txt",
+    "static/media/Logo.3b77e9be.svg": "/static/media/Logo.3b77e9be.svg",
+    "static/media/beach-resort.111ffa5e.jpg": "/static/media/beach-resort.111ffa5e.jpg",
+    "static/media/bhag.4700cd58.jpg": "/static/media/bhag.4700cd58.jpg",
+    "static/media/external-link.487d2350.svg": "/static/media/external-link.487d2350.svg",
+    "static/media/github-logo.ac224853.svg": "/static/media/github-logo.ac224853.svg",
+    "static/media/linkedin-logo.a05c0ee2.svg": "/static/media/linkedin-logo.a05c0ee2.svg",
+    "static/media/me.6176d9f5.jpg": "/static/media/me.6176d9f5.jpg",
+    "static/media/right-arrow.912819b4.svg": "/static/media/right-arrow.912819b4.svg",
+    "static/media/twitter-logo.bc43e27d.svg": "/static/media/twitter-logo.bc43e27d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52583067.js",
+    "static/js/2.3f5b4ca0.chunk.js",
+    "static/css/main.d3d0ad50.chunk.css",
+    "static/js/main.846dab52.chunk.js"
+  ]
+}
