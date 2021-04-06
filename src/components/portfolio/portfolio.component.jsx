@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ProjectImage1 from '../../assets/bhag.jpg';
+import ProjectImage2 from '../../assets/beach-resort.jpg';
 import ExternalLinkSrc from '../../assets/external-link.svg';
 
 import CustomTitle from '../custom-title/custom-title.component';
@@ -70,10 +71,10 @@ const Portfolio = () => {
                 <PortfolioDetailsBody>
                     <ProjectDetails>
                         <ProjectTypeInvertedContainer>
-                            <ProjectType>My Project</ProjectType>
+                            <ProjectType>Client Project</ProjectType>
                         </ProjectTypeInvertedContainer>
                         <ProjectTitleInvertedContainer>
-                            <ProjectTitle>Dealie</ProjectTitle>
+                            <ProjectTitle>Pennylane Apartments</ProjectTitle>
                         </ProjectTitleInvertedContainer>
                         <ProjectDescriptionInvertedContainer>
                             <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
@@ -101,31 +102,28 @@ const Portfolio = () => {
                 </PortfolioDetailsBody>
                 <PortfolioDetailsBody>
                     <ProjectImageContainer>
-                        <ProjectImageSrc src={ProjectImage1} />
+                        <ProjectImageSrc src={ProjectImage2} />
                         <Overlay />
                     </ProjectImageContainer>
                     <ProjectDetails>
                         <ProjectTypeContainer>
-                            <ProjectType>Client Project</ProjectType>
+                            <ProjectType>Practice Project</ProjectType>
                         </ProjectTypeContainer>
                         <ProjectTitleContainer>
-                            <ProjectTitle>Pennylane Apartments</ProjectTitle>
+                            <ProjectTitle>Beach Resort</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescriptionContainer>
-                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
-                            <p>Developed its frontend and backend, then deployed it.</p>
+                            <p>A practice project meant to test and level up my Context API, 
+                            Contentful, CSS, basic searching and filtering skills.</p>
                         </ProjectDescriptionContainer>
                         <TechStackContainer>
                             <TechStack>ReactJS</TechStack>
-                            <TechStack>Redux</TechStack>
-                            <TechStack>Styled Components</TechStack>
-                            <TechStack>Django Rest Framework</TechStack>
-                            <TechStack>Heroku</TechStack>
-                            <TechStack>AWS S3</TechStack>
-                            <TechStack>Cloudfront</TechStack>
+                            <TechStack>Context API</TechStack>
+                            <TechStack>CSS</TechStack>
+                            <TechStack>Contentful</TechStack>
                         </TechStackContainer>
                         <ExternalLinkContainer>
-                            <ExternalLink href="https://www.bananahillsartgallery.com/" target="_blank">
+                            <ExternalLink href="https://react-beach-resort-rooms.netlify.com/" target="_blank">
                                 < ExternalLinkSvg src={ExternalLinkSrc} />
                             </ExternalLink>
                         </ExternalLinkContainer>
