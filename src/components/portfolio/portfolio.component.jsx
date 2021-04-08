@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectImage1 from '../../assets/bhag.jpg';
 import ProjectImage2 from '../../assets/beach-resort.jpg';
+import ProjectImage3 from '../../assets/pennylane.jpg';
 import ExternalLinkSrc from '../../assets/external-link.svg';
 
 import CustomTitle from '../custom-title/custom-title.component';
@@ -77,26 +78,21 @@ const Portfolio = () => {
                             <ProjectTitle>Pennylane Apartments</ProjectTitle>
                         </ProjectTitleInvertedContainer>
                         <ProjectDescriptionInvertedContainer>
-                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
-                            <p>Developed its frontend and backend, then deployed it.</p>
+                            <p>Pennylane Apartments located at Banana Hill in Kiambu County, Kenya.</p>
                         </ProjectDescriptionInvertedContainer>
                         <TechStackInvertedContainer>
                             <TechStack>ReactJS</TechStack>
-                            <TechStack>Redux</TechStack>
-                            <TechStack>Styled Components</TechStack>
-                            <TechStack>Django Rest Framework</TechStack>
-                            <TechStack>Heroku</TechStack>
-                            <TechStack>AWS S3</TechStack>
-                            <TechStack>Cloudfront</TechStack>
+                            <TechStack>CSS</TechStack>
+                            <TechStack>GSAP Animations</TechStack>
                         </TechStackInvertedContainer>
                         <ExternalLinkContainer>
-                            < ExternalLinkInverted href="https://www.bananahillsartgallery.com/" target="_blank">
+                            < ExternalLinkInverted href="https://pennylane.netlify.app/" target="_blank">
                                 < ExternalLinkSvg src={ExternalLinkSrc} />
                             </ ExternalLinkInverted>
                         </ExternalLinkContainer>
                     </ProjectDetails>
                     <ProjectImageContainer>
-                        <ProjectImageSrc src={ProjectImage1} />
+                        <ProjectImageSrc src={ProjectImage3} />
                         <Overlay />
                     </ProjectImageContainer>
                 </PortfolioDetailsBody>
