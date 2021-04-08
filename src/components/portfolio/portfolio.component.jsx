@@ -78,17 +78,12 @@ const Portfolio = () => {
                             <ProjectTitle>Pennylane Apartments</ProjectTitle>
                         </ProjectTitleInvertedContainer>
                         <ProjectDescriptionInvertedContainer>
-                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
-                            <p>Developed its frontend and backend, then deployed it.</p>
+                            <p>Pennylane Apartments located at Banana Hill in Kiambu County, Kenya.</p>
                         </ProjectDescriptionInvertedContainer>
                         <TechStackInvertedContainer>
                             <TechStack>ReactJS</TechStack>
-                            <TechStack>Redux</TechStack>
-                            <TechStack>Styled Components</TechStack>
-                            <TechStack>Django Rest Framework</TechStack>
-                            <TechStack>Heroku</TechStack>
-                            <TechStack>AWS S3</TechStack>
-                            <TechStack>Cloudfront</TechStack>
+                            <TechStack>CSS</TechStack>
+                            <TechStack>GSAP Animations</TechStack>
                         </TechStackInvertedContainer>
                         <ExternalLinkContainer>
                             < ExternalLinkInverted href="https://pennylane.netlify.app/" target="_blank">
