@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/markize/static/css/main.d3d0ad50.chunk.css",
-    "main.js": "/markize/static/js/main.54f901f3.chunk.js",
-    "main.js.map": "/markize/static/js/main.54f901f3.chunk.js.map",
+    "main.js": "/markize/static/js/main.bcf74e32.chunk.js",
+    "main.js.map": "/markize/static/js/main.bcf74e32.chunk.js.map",
     "runtime-main.js": "/markize/static/js/runtime-main.4814893b.js",
     "runtime-main.js.map": "/markize/static/js/runtime-main.4814893b.js.map",
     "static/js/2.65447c5c.chunk.js": "/markize/static/js/2.65447c5c.chunk.js",
@@ -19,6 +19,7 @@
     "static/media/github-logo.ac224853.svg": "/markize/static/media/github-logo.ac224853.svg",
     "static/media/linkedin-logo.a05c0ee2.svg": "/markize/static/media/linkedin-logo.a05c0ee2.svg",
     "static/media/me.6176d9f5.jpg": "/markize/static/media/me.6176d9f5.jpg",
+    "static/media/pennylane.008a775e.jpg": "/markize/static/media/pennylane.008a775e.jpg",
     "static/media/right-arrow.912819b4.svg": "/markize/static/media/right-arrow.912819b4.svg",
     "static/media/twitter-logo.bc43e27d.svg": "/markize/static/media/twitter-logo.bc43e27d.svg"
   },
@@ -26,6 +27,6 @@
     "static/js/runtime-main.4814893b.js",
     "static/js/2.65447c5c.chunk.js",
     "static/css/main.d3d0ad50.chunk.css",
-    "static/js/main.54f901f3.chunk.js"
+    "static/js/main.bcf74e32.chunk.js"
   ]
 }
