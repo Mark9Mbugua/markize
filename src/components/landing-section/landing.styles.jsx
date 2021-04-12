@@ -35,6 +35,7 @@ export const LandingSection = styled.section`
 
     @media screen and (max-width: 480px) {
         align-items: start;
+        height: unset;
     }
 `;
 
