@@ -28,10 +28,20 @@ export const SquareContainer = styled.div`
     margin-top: 20px;
 
     @media screen and (max-width: 480px) {
+        /* display: inline; */
+        position: relative;
         width: 180px;
         height: 180px;
         margin-left: 15px;
-        margin-top: 15px;
+        margin-top: 35px;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 160px;
+        height: 160px;
+        margin-left: 10px;
+        margin-top: 5px;
     }
 
 `;
@@ -47,10 +57,18 @@ export const MyImageBody = styled.div`
     position: absolute;
     overflow: hidden;
     z-index: 10;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 
     @media screen and (max-width: 480px) {
         width: 180px;
         height: 180px;
+        margin-left: 0px;
+        margin-top: -200px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 160px;
+        height: 160px;
+        margin-top: -170px;
     }
 `;

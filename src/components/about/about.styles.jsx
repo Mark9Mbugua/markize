@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -39,8 +39,7 @@ export const AboutSection = styled.section`
     }
 
     @media screen and (max-width: 480px) {
-        height: 150vh;
-        align-items: start;
+        min-height: unset;
     }
 `;
 
@@ -52,6 +51,7 @@ export const AboutBody = styled.div`
     width: 75%;
     margin-top: -20px;
     margin-left: 100px;
+    flex-wrap: wrap;
 
     @media only screen 
     and (min-width: 1024px) 
@@ -84,7 +84,12 @@ export const AboutBody = styled.div`
     @media screen and (max-width: 480px) {
         width: 100%;
         margin-left: 20px;
-        margin-top: 70px;
+        /* margin-top: 70px; */
+        margin-top: unset;
+    }
+
+    @media screen and (max-width: 320px) {
+        border: 1px solid white;
     }
 `;
 
@@ -104,6 +109,7 @@ export const DetailsContainer = styled.div`
     @media screen and (max-width: 480px) {
         flex-direction: column;
         padding-right: 25px;
+        padding-top: 10px;
     }
 `;
 
@@ -113,6 +119,7 @@ export const DetailsBody = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0;
+    flex: 1 1 auto;
 `;
 
 export const MyDetails = styled.p`
@@ -130,4 +137,5 @@ export const TechStack = styled.div`
 
 export const ImageBody = styled.div`
     align-items: center;
+    flex: 1 1 auto;
 `;
