@@ -65,7 +65,7 @@ const Experience = () => {
                             </JobTimeline>
                         </JobIntro>
                         <ArrowStatement>
-                            <Task> Designing and developing RESTful APIs using Django</Task>
+                            <Task> Designing and developing RESTful APIs using Django Rest Framework</Task>
                         </ArrowStatement>
                         <ArrowStatement>
                             <Task>
@@ -102,7 +102,7 @@ const Experience = () => {
                             <Task>Assessing UX and UI designs for technical feasibility</Task>
                         </ArrowStatement>
                         <ArrowStatement>
-                            <Task>Designing and developing RESTful APIs using Django.</Task>
+                            <Task>Designing and developing RESTful APIs using Django Rest Framework.</Task>
                         </ArrowStatement>
                         <ArrowStatement>
                             <Task>

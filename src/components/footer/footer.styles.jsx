@@ -9,6 +9,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     width: 100%;
     overflow-x: hidden;
+    margin-top: 10rem;
 `;
 
 

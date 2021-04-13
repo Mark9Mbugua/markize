@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const ContactSection = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        min-height: unset;
+    }
 `;
 
 export const ContactBody = styled.div`

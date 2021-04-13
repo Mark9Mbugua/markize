@@ -27,8 +27,15 @@ export const SquareContainer = styled.div`
     margin-left: 20px;
     margin-top: 20px;
 
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        position: relative;
+        z-index: 1; 
+        min-height: unset;
+    }
+
     @media screen and (max-width: 480px) {
-        /* display: inline; */
         position: relative;
         width: 180px;
         height: 180px;
@@ -57,7 +64,13 @@ export const MyImageBody = styled.div`
     position: absolute;
     overflow: hidden;
     z-index: 10;
-    /* margin-bottom: auto; */
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        margin-left: 0px;
+        margin-top: -275px;
+    }
 
     @media screen and (max-width: 480px) {
         width: 180px;
