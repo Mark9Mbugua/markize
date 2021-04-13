@@ -26,29 +26,29 @@ export const ContactBody = styled.div`
     }
 
     @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 95%;
     }
 `;
 
 export const WhatNext = styled.p`
     color:#ff6161;
-    letter-spacing: 5px;
-    font-size: 25px; 
+    letter-spacing: 0.32rem;
+    font-size: 1.6rem; 
 `;
 
 export const PartingShot = styled.p`
     color:#9396a3;
-    font-size: 20px; 
+    font-size: 1.25rem; 
 `;
 
 export const ContactMe = styled.h1`
     color:#ffff;
-    letter-spacing: 5px;
-    font-size: 50px;  
+    letter-spacing: 0.32rem;
+    font-size: 3.2rem;  
 `;
 
 export const ContactButtonContainer = styled.div`
-    margin-top: 50px;
+    margin-top: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,5 +57,5 @@ export const ContactButtonContainer = styled.div`
 export const EmailLink = styled.a`
     text-decoration: none;
     cursor: pointer;
-    width: 168px;
+    max-width: 10.5rem;
 `;
