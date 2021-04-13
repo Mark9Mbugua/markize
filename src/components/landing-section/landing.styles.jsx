@@ -33,8 +33,13 @@ export const LandingSection = styled.section`
         height: 115vh;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         min-height: unset;
+        margin-top: 5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: unset;
     }
 `;
 
@@ -84,19 +89,14 @@ export const MyName = styled.p`
     color: #ff6161;
     font-size: 25px;
 
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        font-size: 22px;
+    }
+
     @media screen and (max-width: 480px) {
         font-size: 18px;    
-    }
-`;
-
-export const HeadingTwo = styled.h1`
-    color:#9396a3;
-    font-size: 75px;
-    line-height: 110px;
-
-    @media screen and (max-width: 480px) {
-        font-size: 35px;
-        line-height: 70px;   
     }
 `;
 
@@ -105,16 +105,34 @@ export const HeadingOne = styled.h1`
     font-size: 75px;
     line-height: 110px;
 
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        font-size: 55px;
+        line-height: 90px;
+    }
+
     @media screen and (max-width: 480px) {
         font-size: 35px;
         line-height: 70px;   
     }
 `;
 
+export const HeadingTwo = styled(HeadingOne)`
+    color:#9396a3;
+`;
+
 export const IntroDetails = styled.p`
     color:#9396a3;
     font-size: 35px;
     line-height: 60px;
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 50px;
+    }
 
     @media screen and (max-width: 480px) {
         font-size: 22px;

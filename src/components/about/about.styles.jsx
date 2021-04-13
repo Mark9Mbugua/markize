@@ -32,13 +32,7 @@ export const AboutSection = styled.section`
         height: 115vh;
     }
 
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
-        align-items: flex-start;
-    }
-
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         min-height: unset;
     }
 `;
@@ -84,12 +78,7 @@ export const AboutBody = styled.div`
     @media screen and (max-width: 480px) {
         width: 100%;
         margin-left: 20px;
-        /* margin-top: 70px; */
         margin-top: unset;
-    }
-
-    @media screen and (max-width: 320px) {
-        border: 1px solid white;
     }
 `;
 

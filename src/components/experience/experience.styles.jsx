@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ExperienceSection = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -16,8 +16,8 @@ export const ExperienceSection = styled.section`
         height: 70vh;
     }
 
-    @media screen and (max-width: 480px) {
-        min-height: 175vh;
+    @media screen and (max-width: 768px) {
+        min-height: unset;
     }
 `;
 
@@ -109,7 +109,9 @@ export const CompaniesTabs = styled.div`
     @media screen and (max-width: 480px) {
         flex-direction: unset;
         overflow-x: auto;
+        overflow-y: hidden;
         width: 100%;
+        width: 95%;
         padding-top: unset;
     }
 `;
@@ -150,14 +152,14 @@ export const EmploymentHistory = styled.div`
 `;
 
 export const TabButton = styled.button`
-    min-width: 120px;
+    min-width: 1.2rem;
     width: auto;
-    height: 50px;
-    letter-spacing: 0.7px;
-    line-height: 50px;
-    padding: 0 15px 0 15px;
+    min-height: 3rem;
+    letter-spacing: 0.06em;
+    line-height: 2.5em;
+    padding: 0 1.5em 0 1.5em;
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: bolder;
     cursor: pointer;
     display: flex;
@@ -172,23 +174,8 @@ export const TabButton = styled.button`
         background-color: #18224a;
     }
 
-    @media screen 
-    and (min-width: 768px)
-    and (max-width: 1024px)
-    and (min-height: 768px)
-    and (max-height: 768px) {
-        min-width: 125px;
-        line-height: 55px;
-    }
-
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
-        min-width: 120px;
-        line-height: 50px;
-    }
-
     @media screen and (max-width: 480px) {
+        min-width: 1.5rem;
         justify-content: center;
         border-bottom: ${props => props.isActive === 'active' ? '1px solid #ff6161 !important': '1px solid  #9396a3 !important'};
         border-left: none !important;

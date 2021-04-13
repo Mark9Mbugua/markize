@@ -9,8 +9,8 @@ export const PortfolioSection = styled.section`
     align-items: center;
     overflow-x: hidden;
 
-    @media screen and (max-width: 480px) {
-        min-height: 300vh;
+    @media screen and (max-width: 768px) {
+        min-height: unset;
     }
 `;
 
