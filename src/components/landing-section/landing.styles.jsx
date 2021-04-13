@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const LandingSection = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -34,8 +34,7 @@ export const LandingSection = styled.section`
     }
 
     @media screen and (max-width: 480px) {
-        align-items: start;
-        height: unset;
+        min-height: unset;
     }
 `;
 
