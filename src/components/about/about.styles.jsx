@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ExternalImageLink } from '../portfolio/portfolio.styles';
 
 export const AboutSection = styled.section`
     min-height: 100vh;
@@ -125,6 +126,15 @@ export const TechStack = styled.div`
 `;
 
 export const ImageBody = styled.div`
-    align-items: center;
-    flex: 1 1 auto;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+`;
+
+export const GithubLink = styled(ExternalImageLink)`
+    display: flex;
+    justify-content: center;
 `;

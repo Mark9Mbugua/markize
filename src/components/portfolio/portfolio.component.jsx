@@ -26,7 +26,8 @@ import {
     ExternalLinkSvg,
     ProjectTypeInvertedContainer,
     ProjectDescriptionInvertedContainer,
-    ExternalLinkInverted
+    ExternalLinkInverted,
+    ExternalImageLink
 } from '../portfolio/portfolio.styles';
 
 const Portfolio = () => {
@@ -35,10 +36,12 @@ const Portfolio = () => {
             <PortfolioBody>
                 <CustomTitle>Portfolio</CustomTitle>
                 <PortfolioDetailsBody>
-                    <ProjectImageContainer>
-                        <ProjectImageSrc src={ProjectImage1} />
-                        <Overlay />
-                    </ProjectImageContainer>
+                    <ExternalImageLink href="https://www.bananahillsartgallery.com/" target="_blank">
+                        <ProjectImageContainer>
+                            <ProjectImageSrc src={ProjectImage1} />
+                            <Overlay />
+                        </ProjectImageContainer>
+                    </ExternalImageLink>
                     <ProjectDetails>
                         <ProjectTypeContainer>
                             <ProjectType>Client Project</ProjectType>
@@ -88,16 +91,20 @@ const Portfolio = () => {
                             </ ExternalLinkInverted>
                         </ExternalLinkContainer>
                     </ProjectDetails>
-                    <ProjectImageContainer>
-                        <ProjectImageSrc src={ProjectImage3} />
-                        <Overlay />
-                    </ProjectImageContainer>
+                    <ExternalImageLink href="https://pennylane.netlify.app/" target="_blank">
+                        <ProjectImageContainer>
+                            <ProjectImageSrc src={ProjectImage3} />
+                            <Overlay />
+                        </ProjectImageContainer>
+                    </ExternalImageLink>
                 </PortfolioDetailsBody>
                 <PortfolioDetailsBody>
-                    <ProjectImageContainer>
-                        <ProjectImageSrc src={ProjectImage2} />
-                        <Overlay />
-                    </ProjectImageContainer>
+                    <ExternalImageLink href="https://react-beach-resort-rooms.netlify.com/" target="_blank">
+                        <ProjectImageContainer>
+                            <ProjectImageSrc src={ProjectImage2} />
+                            <Overlay />
+                        </ProjectImageContainer>
+                    </ExternalImageLink>
                     <ProjectDetails>
                         <ProjectTypeContainer>
                             <ProjectType>Practice Project</ProjectType>
