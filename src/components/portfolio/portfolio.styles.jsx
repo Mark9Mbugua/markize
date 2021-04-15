@@ -41,21 +41,20 @@ export const PortfolioDetailsBody = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-top: 25px;
-    margin-bottom: 70px;
+    padding-top: 1.6rem;
+    margin-bottom: 4.4rem;
 
     @media screen and (max-width: 480px) {
         flex-direction: column;
         width: 100%;
-        padding-right: 25px;
+        padding-right: 1.5rem;
         justify-content: flex-start;
-        margin-bottom: 30px;
     }
 `;
 
 export const ProjectImageContainer = styled.div`
     width: 100%;
-    height: 450px;
+    height: 28.2rem;
     position: relative;
 
     @media screen 
@@ -128,19 +127,18 @@ export const ProjectDetails = styled.div`
     justify-content: space-between;
     margin: 0;
     padding-top: 25px;
-    height: 450px;
+    height: 30em;
     position: relative;
 
     @media screen and (max-width: 480px) {
         height: unset;
         align-items: flex-start;
-        min-height: 500px;
+        min-height: 30em;
     }
 
 `;
 
 export const ProjectTypeContainer = styled.div` 
-    /* border: 1px solid white; */
     display: block;
     text-align: end;
 
@@ -157,12 +155,6 @@ export const ProjectType = styled.p`
     color:#ff6161;
 `;
 
-export const ProjectTitleContainer = styled(ProjectTypeContainer)` 
-`;
-
-export const ProjectTitleInvertedContainer = styled(ProjectTypeInvertedContainer)` 
-`;
-
 export const ProjectTitle = styled.h1`
     color:#ffff;
 `;
@@ -176,31 +168,32 @@ export const ProjectDescriptionContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 110%;
+    flex-shrink: 1.5;
     margin-left: -10%;
     z-index: 1;
     text-align: start;
-    padding: 0 30px;
+    padding: 0 1.8rem;
     border-radius: 5px; 
 
     p {
         color:#9396a3;
         background:#18224a;
-        font-size: 18px;
+        font-size: 1.1em;
     }
 
     @media screen and (max-width: 480px) {
-        min-height: 200px;
+        min-height: 12.5rem;
         width: 100%;
         margin-left: unset;
         align-items: flex-start;
         text-align: start;
         z-index: unset;
-        padding: 0 5px;
+        padding: 0 0.3em;
+        border-radius: 3px; 
 
         p {
             margin-left: 0;
-            font-size: 18px;
-            line-height: 35px;
+            line-height: 2em;
         }
     }
 `;
@@ -212,67 +205,17 @@ export const ProjectDescriptionInvertedContainer = styled(ProjectDescriptionCont
 
 export const TechStackContainer = styled.div` 
     display: grid;
-    grid-template-columns: repeat(4, 140px);
-    justify-content: end;
-
-    @media only screen 
-    and (min-width: 1024px) 
-    and (max-height: 1366px)
-    and (orientation: portrait) 
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 5px;
-        padding: 0 10px;
-    }
-
-    @media screen 
-    and (min-width: 768px)
-    and (max-width: 1024px)
-    and (min-height: 768px)
-    and (max-height: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 5px;
-        padding: 0 10px;
-    }
-
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 5px;
-        padding: 0 10px;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 9rem));
+    justify-content: space-evenly;
+    grid-column-gap: 0.5rem;
 
     @media screen and (max-width: 480px) {
-        grid-template-columns: repeat(2, 1fr);
         justify-content: start;
-        grid-row-gap: 5px;
-    }
-`;
-
-export const TechStackInvertedContainer = styled(TechStackContainer)` 
-    justify-content: start;
-
-    @media only screen 
-    and (min-width: 1024px) 
-    and (max-height: 1366px)
-    and (orientation: portrait) 
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-        padding: unset;
+        grid-row-gap: 0.32rem;
     }
 
-    @media screen 
-    and (min-width: 768px)
-    and (max-width: 1024px)
-    and (min-height: 768px)
-    and (max-height: 768px) {
-        padding: unset;
-    }
-
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
-        padding: unset;
+    @media screen and (max-width: 320px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
 

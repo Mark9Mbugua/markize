@@ -16,7 +16,6 @@ import {
     ProjectDetails,
     ProjectTypeContainer,
     ProjectType,
-    ProjectTitleContainer,
     ProjectTitle,
     ProjectDescriptionContainer,
     Overlay,
@@ -26,10 +25,8 @@ import {
     ExternalLink,
     ExternalLinkSvg,
     ProjectTypeInvertedContainer,
-    ProjectTitleInvertedContainer,
     ProjectDescriptionInvertedContainer,
-    ExternalLinkInverted,
-    TechStackInvertedContainer
+    ExternalLinkInverted
 } from '../portfolio/portfolio.styles';
 
 const Portfolio = () => {
@@ -46,21 +43,21 @@ const Portfolio = () => {
                         <ProjectTypeContainer>
                             <ProjectType>Client Project</ProjectType>
                         </ProjectTypeContainer>
-                        <ProjectTitleContainer>
+                        <ProjectTypeContainer>
                             <ProjectTitle>Banana Hill Art Gallery</ProjectTitle>
-                        </ProjectTitleContainer>
+                        </ProjectTypeContainer>
                         <ProjectDescriptionContainer>
                             <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
                             <p>Developed its frontend and backend, then deployed it.</p>
                         </ProjectDescriptionContainer>
                         <TechStackContainer>
+                            <TechStack>Django Rest Framework</TechStack>
                             <TechStack>ReactJS</TechStack>
                             <TechStack>Redux</TechStack>
-                            <TechStack>Styled Components</TechStack>
-                            <TechStack>Django Rest Framework</TechStack>
+                            <TechStack>Cloudfront</TechStack>
                             <TechStack>Heroku</TechStack>
                             <TechStack>AWS S3</TechStack>
-                            <TechStack>Cloudfront</TechStack>
+                            <TechStack>Styled Components</TechStack>
                         </TechStackContainer>
                         <ExternalLinkContainer>
                             <ExternalLink href="https://www.bananahillsartgallery.com/" target="_blank">
@@ -74,17 +71,17 @@ const Portfolio = () => {
                         <ProjectTypeInvertedContainer>
                             <ProjectType>Client Project</ProjectType>
                         </ProjectTypeInvertedContainer>
-                        <ProjectTitleInvertedContainer>
+                        <ProjectTypeInvertedContainer>
                             <ProjectTitle>Pennylane Apartments</ProjectTitle>
-                        </ProjectTitleInvertedContainer>
+                        </ProjectTypeInvertedContainer>
                         <ProjectDescriptionInvertedContainer>
                             <p>Pennylane Apartments located at Banana Hill in Kiambu County, Kenya.</p>
                         </ProjectDescriptionInvertedContainer>
-                        <TechStackInvertedContainer>
+                        <TechStackContainer>
                             <TechStack>ReactJS</TechStack>
                             <TechStack>CSS</TechStack>
                             <TechStack>GSAP Animations</TechStack>
-                        </TechStackInvertedContainer>
+                        </TechStackContainer>
                         <ExternalLinkContainer>
                             < ExternalLinkInverted href="https://pennylane.netlify.app/" target="_blank">
                                 < ExternalLinkSvg src={ExternalLinkSrc} />
@@ -105,9 +102,9 @@ const Portfolio = () => {
                         <ProjectTypeContainer>
                             <ProjectType>Practice Project</ProjectType>
                         </ProjectTypeContainer>
-                        <ProjectTitleContainer>
+                        <ProjectTypeContainer>
                             <ProjectTitle>Beach Resort</ProjectTitle>
-                        </ProjectTitleContainer>
+                        </ProjectTypeContainer>
                         <ProjectDescriptionContainer>
                             <p>A practice project meant to test and level up my Context API, 
                             Contentful, CSS, basic searching and filtering skills.</p>
