@@ -11,8 +11,10 @@ import {
     DetailsBody,
     MyDetails,
     TechStack,
-    ImageBody
+    ImageBody,
+    GithubLink
 } from './about.styles';
+
 
 const About = () => {
     return (

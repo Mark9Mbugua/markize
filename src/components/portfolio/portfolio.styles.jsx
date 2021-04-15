@@ -242,6 +242,10 @@ export const ExternalLinkInverted = styled(ExternalLink)`
     margin-left: 0;
 `;
 
+export const ExternalImageLink = styled(ExternalLink)`
+    margin-left: unset;
+`;
+
 export const ExternalLinkSvg = styled.img` 
     height: 30px;
     width: 25px;
