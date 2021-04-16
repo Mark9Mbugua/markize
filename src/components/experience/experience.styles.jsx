@@ -184,15 +184,8 @@ export const TabButton = styled.button`
 
 export const Task = styled.p`
     color:#9396a3;
-    line-height: 40px;
-    font-size: 20px;
-
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
-        font-size: 18px;
-        line-height: 37px;
-    }
+    line-height: 2.5rem;
+    font-size: 1.25rem;
 `;
 
 export const JobIntro = styled.div`
@@ -201,8 +194,8 @@ export const JobIntro = styled.div`
 
 export const JobTitle = styled.h1`
     color: #fff;
-    line-height: 45px;
-    font-size: 30px;
+    line-height: 2.8rem;
+    font-size: 1.5rem;
 `;
 
 export const TitleSpan = styled.span`
@@ -212,5 +205,5 @@ export const TitleSpan = styled.span`
 `;
 
 export const JobTimeline = styled(Task)`
-    font-size: 18px;
+    font-size: 1.1rem;
 `;
