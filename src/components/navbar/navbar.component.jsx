@@ -22,7 +22,7 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
     let contact = useRef(null);
 
     useEffect(() =>{
-        gsap.from([about, experience, portfolio, contact], {duration: .6, opacity: 0, x: -30, y: -200, stagger: 0.15})
+        gsap.from([about, experience, portfolio, contact], {duration: .6, opacity: 0, x: -30, y: -100, stagger: 0.15})
     }, []);
 
 
