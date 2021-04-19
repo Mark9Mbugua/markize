@@ -37,10 +37,6 @@ export const LandingSection = styled.section`
         min-height: unset;
         margin-top: 5rem;
     }
-
-    @media screen and (max-width: 480px) {
-        margin-top: unset;
-    }
 `;
 
 export const LandingBody = styled.div`

@@ -8,15 +8,23 @@ import {
     LogoLink,
     NavLinks,
     NavLink,
-    LogoSrc
+    LogoSrc,
+    Burger
 } from './navbar.styles';
 
 const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
     return (
         <Nav>
             <Logo>
-                <LogoLink to='/'>
-                   <LogoSrc src={MyLogo} /> 
+                <LogoLink                     
+                    to="landing"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration= {1000}
+                    onClick={() => setDisplayMobileNavbar(false)} 
+                >
+                    <LogoSrc src={MyLogo} /> 
                 </LogoLink>
             </Logo>
             <NavLinks displayMobileNavbar={displayMobileNavbar}>
@@ -61,6 +69,14 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
                     Contact
                 </NavLink>
             </NavLinks>
+            <Burger
+                displayMobileNavbar={displayMobileNavbar} 
+                onClick={() => setDisplayMobileNavbar(!displayMobileNavbar)}
+            >
+                <div className='line1'></div>
+                <div className='line2'></div>
+                <div className='line3'></div>
+            </Burger>
         </Nav>
     )
 }
