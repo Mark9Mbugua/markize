@@ -23,7 +23,7 @@ export const Burger = styled.div`
   
   @media screen and (max-width: 480px) {
     display: block;
-    margin: 25px 15px 0 0;
+    margin: 1.5rem 0.94rem 0 0;
     width: 25px;
 
     div {
@@ -50,6 +50,6 @@ export const Burger = styled.div`
         transform: ${({ displayMobileNavbar }) =>
             displayMobileNavbar ? "rotate(-45deg)" : "rotate(0)"};
         }
-    }
+    }    
   }
 `;

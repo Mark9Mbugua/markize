@@ -11,16 +11,16 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.div`
-    height: 60px;
-    width: 60px;
-    margin-left: 30px;
-    margin-top: 15px;
-
+    height: 3.75rem;
+    width: 3.75rem;
+    margin-left: 1.875rem;
+    margin-top: 0.94rem;
+    
     @media screen and (max-width: 480px) {
-        height: 40px;
-        width: 40px;
-        margin-top: 20px;
-    }            
+        height: 2.5rem;
+        width: 2.5rem;
+        overflow: hidden;
+    }                
 `;
 
 export const LogoSrc = styled.img`
@@ -68,6 +68,10 @@ export const NavLinks = styled.ul`
         z-index: 5;
         margin-right: 0;
     }
+
+    @media screen and (max-width: 320px) {
+        top: 10vh;
+    }
 `;
 
 
@@ -90,5 +94,6 @@ export const NavLink = styled(Link)`
     @media screen and (max-width: 480px) {
         background: inherit;
         height: 15%;
+        width: 80%;
   }
 `;
