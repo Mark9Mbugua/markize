@@ -44,8 +44,9 @@ export const NavLinks = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    margin-right: 70px;
+    width: 40%;
+    height: 100%;
+    margin-right: 1.25rem;
 
     @media screen 
     and (min-width: 480px)
@@ -66,10 +67,24 @@ export const NavLinks = styled.ul`
         align-items: center;
         width: 70%;
         transition: transform 0.5s ease-in;
-        transform: translateX(${ props => props.displayMobileNavbar ? ("6%"): ("106%") });
+        transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
         z-index: 100;
         margin-right: 0;
     }
+`;
+
+
+export const NavLinkContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15%;
+    /* border: 1px solid white; */
+
+    @media screen and (max-width: 480px) {
+        height: 15%;
+        width: 80%;
+  }
 `;
 
 
@@ -79,8 +94,9 @@ export const NavLink = styled(Link)`
     align-items: center;
     color:#9396a3;
     text-decoration: none;
+    text-align: center;
+    height: 100%;
     font-size: 20px;
-    width: 30%;
     cursor: pointer;
 
     &:hover {
@@ -90,11 +106,6 @@ export const NavLink = styled(Link)`
     &:focus {
         color:#ff6161;
     }
-
-    @media screen and (max-width: 480px) {
-        height: 15%;
-        width: 80%;
-  }
 `;
 
 export const Burger = styled.div`
