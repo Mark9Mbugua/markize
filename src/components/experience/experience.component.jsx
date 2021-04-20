@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef,useState } from 'react';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import CustomTitle from '../custom-title/custom-title.component';
 import ArrowStatement from '../arrow-statement/arrow-statement.component';
@@ -17,16 +20,50 @@ import {
     JobIntro
 } from './experience.styles';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Experience = () => {
     const [toggleState, setToggleState] = useState(1);
-
     const toggleTab = (index) => {
         setToggleState(index);
     };
 
+    let experienceSection = useRef(null);
+    let experienceBody = useRef(null);
+    let employmentHistory1 = useRef(null);
+    let employmentHistory2 = useRef(null);
+    let employmentHistory3 = useRef(null);
+    let employmentHistory4 = useRef(null);
+
+    useEffect(() =>{
+        const experienceBodyFirst = experienceBody.children[0];
+        const experienceBodySecond = experienceBodyFirst.nextSibling;
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: experienceSection,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl
+        .from(experienceBodyFirst, {opacity: 0, x: -200, duration: .4})
+        .from(experienceBodySecond, {opacity: 0, y: 200, duration: .8, ease: 'Power3.easeInOut', stagger: 0.2});
+    }, []);
+
+
+    useEffect(() =>{
+        gsap.from([ employmentHistory1, employmentHistory2, employmentHistory3, employmentHistory4],
+            {opacity: 0, duration: .8, ease: 'Power3.easeInOut'})
+    }, [toggleState]);
+
     return (
-        <ExperienceSection id='experience'>
-            <ExperienceBody>
+        <ExperienceSection 
+            id='experience'
+            ref={el => experienceSection = el}   
+        >
+            <ExperienceBody ref={el => experienceBody = el}>
                 <CustomTitle>My Journey</CustomTitle>
                 <ExperienceDetails>
                     <CompaniesTabs>
@@ -55,7 +92,10 @@ const Experience = () => {
                             Rentor
                         </TabButton>
                     </CompaniesTabs>
-                    <EmploymentHistory isActive={toggleState === 1 ? 'active-content' : ''}>
+                    <EmploymentHistory 
+                        isActive={toggleState === 1 ? 'active-content' : ''}
+                        ref={el =>  employmentHistory1 = el}
+                    >
                         <JobIntro>
                             <JobTitle>
                                 Full Stack Web Developer <TitleSpan>@ Dealie</TitleSpan>
@@ -86,7 +126,10 @@ const Experience = () => {
                             <Task>Constantly optimizing the application to achieve a seamless user experience</Task>
                         </ArrowStatement>
                     </EmploymentHistory>
-                    <EmploymentHistory isActive={toggleState === 2 ? 'active-content' : ''}>
+                    <EmploymentHistory
+                        ref={el =>  employmentHistory2 = el} 
+                        isActive={toggleState === 2 ? 'active-content' : ''}
+                    >
                         <JobIntro>
                             <JobTitle>
                                 Full Stack Web Developer <TitleSpan>@ Banana Hill Art Gallery</TitleSpan>
@@ -126,7 +169,10 @@ const Experience = () => {
                             <Task>Constantly optimizing the application to achieve a seamless user experience.</Task>
                         </ArrowStatement>
                     </EmploymentHistory>
-                    <EmploymentHistory isActive={toggleState === 3 ? 'active-content' : ''}>
+                    <EmploymentHistory
+                        ref={el =>  employmentHistory3 = el} 
+                        isActive={toggleState === 3 ? 'active-content' : ''}
+                    >
                         <JobIntro>
                             <JobTitle>
                                 Full Stack Web Developer <TitleSpan>@ Anzil Software Limited</TitleSpan>
@@ -163,7 +209,10 @@ const Experience = () => {
                             <Task>Writing technical documentation.</Task>
                         </ArrowStatement>
                     </EmploymentHistory>
-                    <EmploymentHistory isActive={toggleState === 4 ? 'active-content' : ''}>
+                    <EmploymentHistory
+                        ref={el =>  employmentHistory4 = el} 
+                        isActive={toggleState === 4 ? 'active-content' : ''}
+                    >
                         <JobIntro>
                             <JobTitle>
                                 Backend/API Developer <TitleSpan>@ Rentor Group</TitleSpan>

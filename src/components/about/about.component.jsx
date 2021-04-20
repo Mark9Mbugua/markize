@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-import { gsap, Power3 } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import CustomTitle from '../custom-title/custom-title.component';
@@ -40,7 +40,7 @@ const About = () => {
 
         tl
         .from(aboutBodyFirst, {opacity: 0, x: -200, duration: .4})
-        .from(aboutBodySecond, {opacity: 0, y: 200, duration: .8, ease: Power3.easeInOut, stagger: 0.2});
+        .from(aboutBodySecond, {opacity: 0, y: 200, duration: .8, ease: 'Power3.easeInOut', stagger: 0.2});
     }, []);
 
     return (
