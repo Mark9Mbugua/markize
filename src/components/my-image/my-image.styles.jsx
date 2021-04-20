@@ -1,54 +1,101 @@
 import styled from 'styled-components';
+import { ExternalImageLink } from '../portfolio/portfolio.styles';
 
 export const ImageContainer = styled.div`
+    display: flex;
     position: relative;
-    margin-top: -300px;
-    margin-left: 100px;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
-        margin-top: 60px;
-        margin-left: unset;
+        margin-top: 3.8rem;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 30px;
-        margin-left: unset;
+        margin-top: 2rem;
+    }
+`;
+
+export const GithubLink = styled(ExternalImageLink)`
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 18.1rem;
+    height: 18.1rem;
+
+    &:hover .square-container {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 16rem;
+        height: 16rem;
+
+        &:hover .square-container {
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 12.65rem;
+        height: 12.65rem;
+
+        &:hover .square-container {
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 11.2rem;
+        height: 11.2rem;
+
+        &:hover .square-container {
+            margin-left: 0.8rem;
+            margin-top: 0.8rem;
+        }
     }
 `;
 
 export const SquareContainer = styled.div`
-    width: 250px;
-    height: 250px;
+    width: 15.6rem;
+    height: 15.6rem;
     border: 1px solid  #ff6161;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 20px;
-
+    position: relative;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    z-index: 1;
+    transition: 0.2s;
+    
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
-        position: relative;
-        z-index: 1; 
-        min-height: unset;
+        width: 14rem;
+        height: 14rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
     }
 
     @media screen and (max-width: 480px) {
-        position: relative;
-        width: 180px;
-        height: 180px;
-        margin-left: 15px;
-        margin-top: 35px;
-        z-index: 1;
+        width: 11.25rem;
+        height: 11.25rem;
+        margin-left: 1.4rem;
+        margin-top: 1.4rem;
     }
 
     @media screen and (max-width: 320px) {
-        width: 160px;
-        height: 160px;
-        margin-left: 10px;
-        margin-top: 5px;
+        width: 10rem;
+        height: 10rem;
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
     }
 
 `;
@@ -59,8 +106,8 @@ export const ImageSrc = styled.img`
 `;
 
 export const MyImageBody = styled.div`
-    width: 250px;
-    height: 250px;
+    width: 15.6rem;
+    height: 15.6rem;
     position: absolute;
     overflow: hidden;
     z-index: 10;
@@ -68,20 +115,21 @@ export const MyImageBody = styled.div`
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
-        margin-left: 0px;
-        margin-top: -275px;
+        width: 14rem;
+        height: 14rem;
+        margin-left: 0;
+        margin-top: 0;
     }
 
     @media screen and (max-width: 480px) {
-        width: 180px;
-        height: 180px;
-        margin-left: 0px;
-        margin-top: -200px;
+        width: 11.25rem;
+        height: 11.25rem;
+        margin-left: 0;
+        margin-top: 0;
     }
 
     @media screen and (max-width: 320px) {
-        width: 160px;
-        height: 160px;
-        margin-top: -170px;
+        width: 10rem;
+        height: 10rem;
     }
 `;

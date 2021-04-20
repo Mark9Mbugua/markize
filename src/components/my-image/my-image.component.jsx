@@ -9,17 +9,23 @@ import {
     ImageContainer,
     SquareContainer,
     ImageSrc,
-    MyImageBody 
+    MyImageBody,
+    GithubLink 
 } from './my-image.styles';
 
 const MyImage = () => {
     return (
         <ImageContainer>
-           <SquareContainer />
-           <MyImageBody>
-                <ImageSrc src={MyBioImage} />
-                <Overlay />
-            </MyImageBody> 
+            <GithubLink
+                className='github-link' 
+                href="https://github.com/Mark9Mbugua" target="_blank"
+            >
+                <SquareContainer className='square-container' />
+                <MyImageBody>
+                    <ImageSrc src={MyBioImage} />
+                    <Overlay />
+                </MyImageBody>
+            </GithubLink> 
         </ImageContainer>
     )
 }

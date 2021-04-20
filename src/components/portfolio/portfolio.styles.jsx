@@ -21,13 +21,22 @@ export const PortfolioBody = styled.div`
     align-items: flex-start;
     width: 75%;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 6.25rem;
+
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        margin-left: 3rem;
+        width: 85%;
+    }
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
+        margin-left: 3rem;
         width: 85%;
-        margin-left: 50px;
     }
 
     @media screen and (max-width: 480px) {
