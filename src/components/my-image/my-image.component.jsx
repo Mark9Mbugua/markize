@@ -16,10 +16,7 @@ import {
 const MyImage = () => {
     return (
         <ImageContainer>
-            <GithubLink
-                className='github-link' 
-                href="https://github.com/Mark9Mbugua" target="_blank"
-            >
+            <GithubLink href="https://github.com/Mark9Mbugua" target="_blank">
                 <SquareContainer className='square-container' />
                 <MyImageBody>
                     <ImageSrc src={MyBioImage} />

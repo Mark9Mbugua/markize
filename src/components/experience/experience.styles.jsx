@@ -123,6 +123,7 @@ export const EmploymentHistory = styled.div`
     align-items: center;
     margin: 0;
     padding-top: 25px;
+    /* transition: 0.5s; */
 
     @media only screen 
     and (min-width: 1024px) 
@@ -168,6 +169,7 @@ export const TabButton = styled.button`
     border: none;
     border-left: ${props => props.isActive === 'active' ? '1px solid #ff6161 !important': '1px solid  #9396a3 !important'};
     outline: none;
+    transition: 0.5s;
 
     &:hover {
         color:#ff6161;
