@@ -55,7 +55,7 @@ const Experience = () => {
 
     useEffect(() =>{
         gsap.from([ employmentHistory1, employmentHistory2, employmentHistory3, employmentHistory4],
-            {opacity: 0, duration: .8, ease: 'Power3.easeInOut'})
+            {opacity: 0, ease: 'Power3.easeInOut'})
     }, [toggleState]);
 
     return (
@@ -105,7 +105,7 @@ const Experience = () => {
                             </JobTimeline>
                         </JobIntro>
                         <ArrowStatement>
-                            <Task> Designing and developing RESTful APIs using Django Rest Framework</Task>
+                            <Task>Designing and developing RESTful APIs using Django Rest Framework</Task>
                         </ArrowStatement>
                         <ArrowStatement>
                             <Task>
