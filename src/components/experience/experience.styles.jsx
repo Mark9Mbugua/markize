@@ -34,7 +34,7 @@ export const ExperienceBody = styled.div`
     and (max-height: 1366px)
     and (orientation: portrait) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
-        margin-left: 50px;
+        margin-left: 3rem;
         width: 85%;
     }
 
@@ -43,15 +43,15 @@ export const ExperienceBody = styled.div`
     and (max-width: 1024px)
     and (min-height: 768px)
     and (max-height: 768px) {
+        margin-left: 3rem;
         width: 85%;
-        margin-left: 50px;
     }
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
+        margin-left: 3rem;
         width: 85%;
-        margin-left: 50px;
     }
 
     @media screen and (max-width: 480px) {

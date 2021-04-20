@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+import { gsap, Power3 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import CustomTitle from '../custom-title/custom-title.component';
 import ArrowStatement from '../arrow-statement/arrow-statement.component';
@@ -11,15 +14,41 @@ import {
     DetailsBody,
     MyDetails,
     TechStack,
-    ImageBody,
-    GithubLink
 } from './about.styles';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 const About = () => {
+    let aboutSection = useRef(null);
+    let aboutBody = useRef(null);
+
+    useEffect(() =>{
+        const aboutBodyFirst = aboutBody.children[0];
+        const aboutBodySecond = aboutBodyFirst.nextSibling;
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: aboutSection,
+                // toggleActions: 'play none none none',
+                start: 'top 50%',
+                // end: '+=100vh',
+                // markers: true,
+
+            }
+        });
+
+        tl
+        .from(aboutBodyFirst, {opacity: 0, x: -200, duration: .4})
+        .from(aboutBodySecond, {opacity: 0, y: 200, duration: .8, ease: Power3.easeInOut, stagger: 0.2});
+    }, []);
+
     return (
-        <AboutSection id='about'>
-            <AboutBody>
+        <AboutSection 
+            id='about'
+            ref={el => aboutSection = el}
+        >
+            <AboutBody ref={el => aboutBody = el}>
                 <CustomTitle>About Me</CustomTitle>
                 <DetailsContainer>
                     <DetailsBody>

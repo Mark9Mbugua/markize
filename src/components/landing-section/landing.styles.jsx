@@ -45,15 +45,14 @@ export const LandingBody = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 75%;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 6.25rem;
 
     @media only screen 
     and (min-width: 1024px) 
     and (max-height: 1366px)
     and (orientation: portrait) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
-        margin-left: 50px;
+        margin-left: 3rem;
         width: 85%;
     }
 
@@ -63,14 +62,14 @@ export const LandingBody = styled.div`
     and (min-height: 768px)
     and (max-height: 768px) {
         width: 85%;
-        margin-left: 50px;
+        margin-left: 3rem;
     }
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
         width: 85%;
-        margin-left: 50px;
+        margin-left: 3rem;
     }
 
     @media screen and (max-width: 480px) {
