@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import ProjectImage1 from '../../assets/bhag.jpg';
 import ProjectImage2 from '../../assets/beach-resort.jpg';
@@ -30,10 +33,68 @@ import {
     ExternalImageLink
 } from '../portfolio/portfolio.styles';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Portfolio = () => {
+    let portfolioSection = useRef(null);
+    let portfolioBody = useRef(null);
+
+    useEffect(() =>{
+        const portfolioBodyFirst = portfolioBody.children[0];
+        const portfolioBodySecond = portfolioBodyFirst.nextSibling;
+        const portfolioBodyThird = portfolioBodySecond.nextSibling;
+        const portfolioBodyFourth = portfolioBodyThird.nextSibling;
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: portfolioSection,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl
+        .from(portfolioBodyFirst, {opacity: 0, x: -200, duration: .4, stagger: 1.0})
+        
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: portfolioBodySecond,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl2
+        .from(portfolioBodySecond, {opacity: 0, y: -60, duration: .8, ease: 'Power3.easeInOut', stagger: 1.0});
+
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: portfolioBodyThird,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl3
+        .from(portfolioBodyThird, {opacity: 0, y: -60, duration: .8, ease: 'Power3.easeInOut', stagger: 1.0});
+
+        let tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: portfolioBodyFourth,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl4
+        .from(portfolioBodyFourth, {opacity: 0, y: -60, duration: .8, ease: 'Power3.easeInOut', stagger: 1.0});
+    }, []);
     return (
-        <PortfolioSection id='portfolio'>
-            <PortfolioBody>
+        <PortfolioSection 
+            id='portfolio'
+            ref={el => portfolioSection = el}
+        >
+            <PortfolioBody ref={el => portfolioBody = el}>
                 <CustomTitle>Portfolio</CustomTitle>
                 <PortfolioDetailsBody>
                     <ExternalImageLink href="https://www.bananahillsartgallery.com/" target="_blank">
