@@ -38,7 +38,7 @@ const Contact = () => {
         tl
         .from(contactBodyFirst, {opacity: 0, x: -200, duration: .4, ease: 'Power3.easeInOut', stagger: .8})
         .from([contactBodySecond, contactBodyThird, contactBodyFourth],
-            {opacity: 0, y: 100, duration: .8, ease: 'Power3.easeInOut', stagger: .6});
+            {opacity: 0, y: 100, duration: .8, ease: 'Power3.easeInOut', stagger: .6})
     }, []);
 
     return (
