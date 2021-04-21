@@ -111,8 +111,8 @@ const Portfolio = () => {
                             <ProjectTitle>Banana Hill Art Gallery</ProjectTitle>
                         </ProjectTypeContainer>
                         <ProjectDescriptionContainer>
-                            <p>A website that displays contemprary African artwork by some of Africa's finest artists</p>
-                            <p>Developed its frontend and backend, then deployed it.</p>
+                            <p>A website that displays contemprary African artwork by some of Africa's finest artists.
+                            Developed its frontend and backend, then deployed it.</p>
                         </ProjectDescriptionContainer>
                         <TechStackContainer>
                             <TechStack>Django Rest Framework</TechStack>
@@ -144,7 +144,7 @@ const Portfolio = () => {
                         <TechStackContainer>
                             <TechStack>ReactJS</TechStack>
                             <TechStack>CSS</TechStack>
-                            <TechStack>GSAP Animations</TechStack>
+                            <TechStack>GSAP</TechStack>
                         </TechStackContainer>
                         <ExternalLinkContainer>
                             < ExternalLinkInverted href="https://pennylane.netlify.app/" target="_blank">
