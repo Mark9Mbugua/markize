@@ -27,9 +27,10 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
 
 
     return (
-        <Nav>
-            <Logo>
-                <LogoLink                     
+        <Nav displayMobileNavbar={displayMobileNavbar}>
+            <Logo displayMobileNavbar={displayMobileNavbar}>
+                <LogoLink
+                    displayMobileNavbar={displayMobileNavbar}                     
                     to="landing"
                     spy={true}
                     smooth={true}

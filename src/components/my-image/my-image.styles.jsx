@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ExternalImageLink } from '../portfolio/portfolio.styles';
+import { Overlay } from '../portfolio/portfolio.styles';
 
 export const ImageContainer = styled.div`
     display: flex;
@@ -18,7 +18,7 @@ export const ImageContainer = styled.div`
     }
 `;
 
-export const GithubLink = styled(ExternalImageLink)`
+export const GithubLink = styled.a`
     cursor: pointer;
     display: flex;
     position: relative;
@@ -26,15 +26,15 @@ export const GithubLink = styled(ExternalImageLink)`
     align-items: center;
     width: 18.1rem;
     height: 18.1rem;
+    text-decoration: none;
+    overflow-y: hidden;
 
     &:hover .square-container {
         margin-left: 2rem;
         margin-top: 2rem;
     }
 
-    @media screen 
-    and (min-width: 480px)
-    and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: 16rem;
         height: 16rem;
 
@@ -63,6 +63,10 @@ export const GithubLink = styled(ExternalImageLink)`
             margin-top: 0.8rem;
         }
     }
+`;
+
+export const MyImageOverlay = styled(Overlay)`
+    height: 100%;
 `;
 
 export const SquareContainer = styled.div`
