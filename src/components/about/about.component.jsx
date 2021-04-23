@@ -30,10 +30,7 @@ const About = () => {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: aboutSection,
-                // toggleActions: 'play none none none',
-                start: 'top 50%',
-                // end: '+=100vh',
-                // markers: true,
+                start: 'top 50%'
 
             }
         });
