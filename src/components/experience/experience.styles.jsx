@@ -123,7 +123,6 @@ export const EmploymentHistory = styled.div`
     align-items: center;
     margin: 0;
     padding-top: 25px;
-    /* transition: 0.5s; */
 
     @media only screen 
     and (min-width: 1024px) 

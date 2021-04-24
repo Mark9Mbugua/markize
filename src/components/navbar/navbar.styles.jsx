@@ -37,7 +37,7 @@ export const LogoSrc = styled.img`
 
 export const LogoLink = styled(Link)`
     text-decoration: none;
-    cursor: pointer;   
+    cursor: pointer;  
 `;
 
 export const NavLinks = styled.ul`
@@ -60,13 +60,12 @@ export const NavLinks = styled.ul`
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        transition: transform 0.5s ease-in;
+        width: 100%;
+        transition: transform 0.3s ease-in;
         transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
         z-index: 100;
         margin-right: 0;
@@ -79,7 +78,6 @@ export const NavLinkContainer = styled.div`
     justify-content: center;
     align-items: center;
     min-width: 15%;
-    /* border: 1px solid white; */
 
     @media screen and (max-width: 480px) {
         height: 15%;
@@ -106,11 +104,22 @@ export const NavLink = styled(Link)`
     &:focus {
         color:#ff6161;
     }
+
+    @media screen and (max-width: 480px) {
+        &:hover {
+            background: #18224a;
+        }
+
+        &:focus {
+            background: #18224a;
+        }
+    }
 `;
 
 export const Burger = styled.div`
   display: none;
   cursor: pointer;
+  background: inherit;
   
   @media screen and (max-width: 480px) {
     display: block;

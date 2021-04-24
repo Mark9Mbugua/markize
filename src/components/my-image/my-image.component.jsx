@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Overlay } from '../portfolio/portfolio.styles'
+import { Overlay } from '../portfolio/portfolio.styles';
 
 import MyBioImage from '../../assets/me.jpg';
 
@@ -10,7 +10,8 @@ import {
     SquareContainer,
     ImageSrc,
     MyImageBody,
-    GithubLink 
+    GithubLink,
+    MyImageOverlay 
 } from './my-image.styles';
 
 const MyImage = () => {
@@ -20,7 +21,7 @@ const MyImage = () => {
                 <SquareContainer className='square-container' />
                 <MyImageBody>
                     <ImageSrc src={MyBioImage} />
-                    <Overlay />
+                    <MyImageOverlay />
                 </MyImageBody>
             </GithubLink> 
         </ImageContainer>
