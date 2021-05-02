@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectImage1 from '../../assets/bhag.jpg';
 import ProjectImage2 from '../../assets/beach-resort.jpg';
 import ProjectImage3 from '../../assets/pennylane.jpg';
+import ProjectImage4 from '../../assets/kare.jpg';
 import ExternalLinkSrc from '../../assets/external-link.svg';
 
 import CustomTitle from '../custom-title/custom-title.component';
@@ -44,6 +45,7 @@ const Portfolio = () => {
         const portfolioBodySecond = portfolioBodyFirst.nextSibling;
         const portfolioBodyThird = portfolioBodySecond.nextSibling;
         const portfolioBodyFourth = portfolioBodyThird.nextSibling;
+        const portfolioBodyFifth = portfolioBodyFourth.nextSibling;
 
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -88,6 +90,17 @@ const Portfolio = () => {
 
         tl4
         .from(portfolioBodyFourth, {opacity: 0, y: -60, duration: .8, ease: 'Power3.easeInOut', stagger: 1.0});
+
+        let tl5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: portfolioBodyFifth,
+                start: 'top 50%',
+
+            }
+        });
+
+        tl5
+        .from(portfolioBodyFifth, {opacity: 0, y: -60, duration: .8, ease: 'Power3.easeInOut', stagger: 1.0});
     }, []);
     return (
         <PortfolioSection 
@@ -189,6 +202,38 @@ const Portfolio = () => {
                             </ExternalLink>
                         </ExternalLinkContainer>
                     </ProjectDetails>
+                </PortfolioDetailsBody>
+                <PortfolioDetailsBody>
+                    <ProjectDetails>
+                        <ProjectTypeInvertedContainer>
+                            <ProjectType>Practice Project</ProjectType>
+                        </ProjectTypeInvertedContainer>
+                        <ProjectTypeInvertedContainer>
+                            <ProjectTitle>Kare Clothing</ProjectTitle>
+                        </ProjectTypeInvertedContainer>
+                        <ProjectDescriptionInvertedContainer>
+                            <p>A practice project I developed with the aim of improving my Google OAuth, shopping cart 
+                            and checkout implementation, Firebase, ReactJS, Redux and Styled-Components skills.</p>
+                        </ProjectDescriptionInvertedContainer>
+                        <TechStackContainer>
+                            <TechStack>ReactJS</TechStack>
+                            <TechStack>Redux</TechStack>
+                            <TechStack>Styled-Components</TechStack>
+                            <TechStack>Firebase</TechStack>
+                            <TechStack>Google OAuth</TechStack>
+                        </TechStackContainer>
+                        <ExternalLinkContainer>
+                            < ExternalLinkInverted href="https://kare-live.herokuapp.com/" target="_blank">
+                                < ExternalLinkSvg src={ExternalLinkSrc} />
+                            </ ExternalLinkInverted>
+                        </ExternalLinkContainer>
+                    </ProjectDetails>
+                    <ExternalImageLink href="https://kare-live.herokuapp.com/" target="_blank">
+                        <ProjectImageContainer>
+                            <ProjectImageSrc src={ProjectImage4} />
+                            <Overlay />
+                        </ProjectImageContainer>
+                    </ExternalImageLink>
                 </PortfolioDetailsBody>
             </PortfolioBody>
         </PortfolioSection>

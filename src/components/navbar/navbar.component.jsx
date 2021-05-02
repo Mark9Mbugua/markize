@@ -27,8 +27,8 @@ const Navbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
 
 
     return (
-        <Nav displayMobileNavbar={displayMobileNavbar}>
-            <Logo displayMobileNavbar={displayMobileNavbar}>
+        <Nav>
+            <Logo>
                 <LogoLink
                     displayMobileNavbar={displayMobileNavbar}                     
                     to="landing"
