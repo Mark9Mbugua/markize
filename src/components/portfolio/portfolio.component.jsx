@@ -125,27 +125,21 @@ const Portfolio = () => {
       <PortfolioBody ref={(el) => (portfolioBody = el)}>
         <CustomTitle>Portfolio</CustomTitle>
         <PortfolioDetailsBody>
-          <ExternalImageLink href="https://twaa.io/" target="_blank">
-            <ProjectImageContainer>
-              <ProjectImageSrc src={ProjectImage1} />
-              <Overlay />
-            </ProjectImageContainer>
-          </ExternalImageLink>
           <ProjectDetails>
-            <ProjectTypeContainer>
+            <ProjectTypeInvertedContainer>
               <ProjectType>Client Project</ProjectType>
-            </ProjectTypeContainer>
-            <ProjectTypeContainer>
+            </ProjectTypeInvertedContainer>
+            <ProjectTypeInvertedContainer>
               <ProjectTitle>TWAA</ProjectTitle>
-            </ProjectTypeContainer>
-            <ProjectDescriptionContainer>
+            </ProjectTypeInvertedContainer>
+            <ProjectDescriptionInvertedContainer>
               <p>
                 TWAA is a diverse, inclusive and safe digital space for women to
                 build and grow communities, connect with female mentors, create
                 and share content and access tools for personal and professional
                 development.
               </p>
-            </ProjectDescriptionContainer>
+            </ProjectDescriptionInvertedContainer>
             <TechStackContainer>
               <TechStack>ReactJS</TechStack>
               <TechStack>Redux</TechStack>
@@ -153,11 +147,17 @@ const Portfolio = () => {
               <TechStack>Express</TechStack>
             </TechStackContainer>
             <ExternalLinkContainer>
-              <ExternalLink href="https://twaa.io/" target="_blank">
+              <ExternalLinkInverted href="https://twaa.io/" target="_blank">
                 <ExternalLinkSvg src={ExternalLinkSrc} />
-              </ExternalLink>
+              </ExternalLinkInverted>
             </ExternalLinkContainer>
           </ProjectDetails>
+          <ExternalImageLink href="https://twaa.io/" target="_blank">
+            <ProjectImageContainer>
+              <ProjectImageSrc src={ProjectImage1} />
+              <Overlay />
+            </ProjectImageContainer>
+          </ExternalImageLink>
         </PortfolioDetailsBody>
         {/* <PortfolioDetailsBody>
           <ProjectDetails>

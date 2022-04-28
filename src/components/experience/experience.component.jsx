@@ -86,7 +86,7 @@ const Experience = () => {
               isActive={toggleState === 2 ? "active" : ""}
               onClick={() => toggleTab(2)}
             >
-              Adanian Labs
+              Adanian
             </TabButton>
             <TabButton
               isActive={toggleState === 3 ? "active" : ""}

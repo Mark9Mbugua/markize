@@ -83,15 +83,19 @@ export const LandingBody = styled.div`
 export const MyName = styled.p`
     color: #ff6161;
     font-size: 25px;
+    margin-top: 2rem;
 
     @media screen 
     and (min-width: 480px)
     and (max-width: 768px) {
         font-size: 22px;
+        margin-top: unset;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 18px;    
+        font-size: 18px;
+        margin-top: unset;
+
     }
 `;
 
