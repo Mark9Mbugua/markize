@@ -133,7 +133,7 @@ const Portfolio = () => {
           </ExternalImageLink>
           <ProjectDetails>
             <ProjectTypeContainer>
-              <ProjectType>Work Project</ProjectType>
+              <ProjectType>Client Project</ProjectType>
             </ProjectTypeContainer>
             <ProjectTypeContainer>
               <ProjectTitle>TWAA</ProjectTitle>
