@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/markize/static/css/main.e1e13fb7.chunk.css",
-    "main.js": "/markize/static/js/main.3824cc63.chunk.js",
-    "main.js.map": "/markize/static/js/main.3824cc63.chunk.js.map",
+    "main.js": "/markize/static/js/main.28ab8236.chunk.js",
+    "main.js.map": "/markize/static/js/main.28ab8236.chunk.js.map",
     "runtime-main.js": "/markize/static/js/runtime-main.50f40d8f.js",
     "runtime-main.js.map": "/markize/static/js/runtime-main.50f40d8f.js.map",
     "static/js/2.8bbb7262.chunk.js": "/markize/static/js/2.8bbb7262.chunk.js",
@@ -12,12 +12,12 @@
     "index.html": "/markize/index.html",
     "static/css/main.e1e13fb7.chunk.css.map": "/markize/static/css/main.e1e13fb7.chunk.css.map",
     "static/js/2.8bbb7262.chunk.js.LICENSE.txt": "/markize/static/js/2.8bbb7262.chunk.js.LICENSE.txt",
+    "static/media/Anzil.d86a725f.png": "/markize/static/media/Anzil.d86a725f.png",
     "static/media/Logo.3b77e9be.svg": "/markize/static/media/Logo.3b77e9be.svg",
     "static/media/TWAA.54c9e700.png": "/markize/static/media/TWAA.54c9e700.png",
     "static/media/beach-resort.8816f286.jpg": "/markize/static/media/beach-resort.8816f286.jpg",
     "static/media/external-link.487d2350.svg": "/markize/static/media/external-link.487d2350.svg",
     "static/media/github-logo.ac224853.svg": "/markize/static/media/github-logo.ac224853.svg",
-    "static/media/kare.b45e562c.jpg": "/markize/static/media/kare.b45e562c.jpg",
     "static/media/linkedin-logo.a05c0ee2.svg": "/markize/static/media/linkedin-logo.a05c0ee2.svg",
     "static/media/me.6176d9f5.jpg": "/markize/static/media/me.6176d9f5.jpg",
     "static/media/right-arrow.912819b4.svg": "/markize/static/media/right-arrow.912819b4.svg",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.50f40d8f.js",
     "static/js/2.8bbb7262.chunk.js",
     "static/css/main.e1e13fb7.chunk.css",
-    "static/js/main.3824cc63.chunk.js"
+    "static/js/main.28ab8236.chunk.js"
   ]
 }
