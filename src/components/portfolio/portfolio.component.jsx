@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import ProjectImage1 from "../../assets/TWAA.png";
 import ProjectImage2 from "../../assets/beach-resort.jpg";
-import ProjectImage4 from "../../assets/kare.jpg";
+import ProjectImage4 from "../../assets/Anzil.png";
 import ExternalLinkSrc from "../../assets/external-link.svg";
 
 import CustomTitle from "../custom-title/custom-title.component";
@@ -142,9 +142,11 @@ const Portfolio = () => {
             </ProjectDescriptionInvertedContainer>
             <TechStackContainer>
               <TechStack>ReactJS</TechStack>
+              <TechStack>Sass</TechStack>
               <TechStack>Redux</TechStack>
               <TechStack>Node.js</TechStack>
               <TechStack>Express</TechStack>
+              <TechStack>Nginx</TechStack>
             </TechStackContainer>
             <ExternalLinkContainer>
               <ExternalLinkInverted href="https://twaa.io/" target="_blank">
@@ -199,36 +201,38 @@ const Portfolio = () => {
         </PortfolioDetailsBody> */}
         <PortfolioDetailsBody>
           <ExternalImageLink
-            href="https://react-beach-resort-rooms.netlify.com/"
+            href="https://www.anzilsystems.com/"
             target="_blank"
           >
             <ProjectImageContainer>
-              <ProjectImageSrc src={ProjectImage2} />
+              <ProjectImageSrc src={ProjectImage4} />
               <Overlay />
             </ProjectImageContainer>
           </ExternalImageLink>
           <ProjectDetails>
             <ProjectTypeContainer>
-              <ProjectType>Practice Project</ProjectType>
+              <ProjectType>Client Project</ProjectType>
             </ProjectTypeContainer>
             <ProjectTypeContainer>
-              <ProjectTitle>Beach Resort</ProjectTitle>
+              <ProjectTitle>Anzil Software Limited</ProjectTitle>
             </ProjectTypeContainer>
             <ProjectDescriptionContainer>
               <p>
-                A practice project meant to test and level up my Context API,
-                Contentful, CSS, basic searching and filtering skills.
+                Anzil Software Ltd is a Software Company based in Westlands,
+                Nairobi, Kenya that specializes in building Enterprise Web
+                Applications
               </p>
             </ProjectDescriptionContainer>
             <TechStackContainer>
               <TechStack>ReactJS</TechStack>
-              <TechStack>Context API</TechStack>
-              <TechStack>CSS</TechStack>
-              <TechStack>Contentful</TechStack>
+              <TechStack>Redux</TechStack>
+              <TechStack>Styled-Components</TechStack>
+              <TechStack>MongoDB</TechStack>
+              <TechStack>Node.js & Express</TechStack>
             </TechStackContainer>
             <ExternalLinkContainer>
               <ExternalLink
-                href="https://react-beach-resort-rooms.netlify.com/"
+                href="https://www.anzilsystems.com/"
                 target="_blank"
               >
                 <ExternalLinkSvg src={ExternalLinkSrc} />
@@ -242,25 +246,23 @@ const Portfolio = () => {
               <ProjectType>Practice Project</ProjectType>
             </ProjectTypeInvertedContainer>
             <ProjectTypeInvertedContainer>
-              <ProjectTitle>Kare Clothing</ProjectTitle>
+              <ProjectTitle>Beach Resort</ProjectTitle>
             </ProjectTypeInvertedContainer>
             <ProjectDescriptionInvertedContainer>
               <p>
-                A practice project I developed with the aim of improving my
-                Google OAuth, shopping cart and checkout implementation,
-                Firebase, ReactJS, Redux and Styled-Components skills.
+                A practice project meant to test and level up my Context API,
+                Contentful, CSS, basic searching and filtering skills.
               </p>
             </ProjectDescriptionInvertedContainer>
             <TechStackContainer>
               <TechStack>ReactJS</TechStack>
-              <TechStack>Redux</TechStack>
-              <TechStack>Styled-Components</TechStack>
-              <TechStack>Firebase</TechStack>
-              <TechStack>Google OAuth</TechStack>
+              <TechStack>Context API</TechStack>
+              <TechStack>CSS</TechStack>
+              <TechStack>Contentful</TechStack>
             </TechStackContainer>
             <ExternalLinkContainer>
               <ExternalLinkInverted
-                href="https://kare-live.herokuapp.com/"
+                href="https://react-beach-resort-rooms.netlify.com/"
                 target="_blank"
               >
                 <ExternalLinkSvg src={ExternalLinkSrc} />
@@ -268,11 +270,11 @@ const Portfolio = () => {
             </ExternalLinkContainer>
           </ProjectDetails>
           <ExternalImageLink
-            href="https://kare-live.herokuapp.com/"
+            href="https://react-beach-resort-rooms.netlify.com/"
             target="_blank"
           >
             <ProjectImageContainer>
-              <ProjectImageSrc src={ProjectImage4} />
+              <ProjectImageSrc src={ProjectImage2} />
               <Overlay />
             </ProjectImageContainer>
           </ExternalImageLink>

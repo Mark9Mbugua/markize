@@ -55,7 +55,8 @@ const Landing = () => {
           I am a creator and a consultant
         </IntroDetails>
         <IntroDetails ref={(el) => (introDetailsThree = el)}>
-          <FavStack>ReactJS</FavStack> is my main weapon of mass creation
+          <FavStack>ReactJS, Node.js & Express</FavStack> are my main weapons of
+          mass creation
         </IntroDetails>
         <LandingButtonContainer ref={(el) => (landingButton = el)}>
           <ContactLink

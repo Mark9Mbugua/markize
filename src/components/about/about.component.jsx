@@ -71,19 +71,22 @@ const About = () => {
                 <MyDetails>React</MyDetails>
               </ArrowStatement>
               <ArrowStatement>
-                <MyDetails>HTML & (S)CSS</MyDetails>
+                <MyDetails>JSX & (S)CSS</MyDetails>
               </ArrowStatement>
               <ArrowStatement>
-                <MyDetails>Python</MyDetails>
+                <MyDetails>Redux</MyDetails>
               </ArrowStatement>
               <ArrowStatement>
                 <MyDetails>Django</MyDetails>
               </ArrowStatement>
               <ArrowStatement>
-                <MyDetails>Node.js</MyDetails>
+                <MyDetails>Node.js & Express</MyDetails>
               </ArrowStatement>
               <ArrowStatement>
                 <MyDetails>AWS</MyDetails>
+              </ArrowStatement>
+              <ArrowStatement>
+                <MyDetails>Nginx</MyDetails>
               </ArrowStatement>
             </TechStack>
           </DetailsBody>
